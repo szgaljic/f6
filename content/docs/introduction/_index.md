@@ -1,11 +1,11 @@
 ---
-title: Guide
+title: Introduction
 weight: 2
 sidebar:
   open: true
 ---
 
 {{< cards >}}
-  {{< card url="project-structure" title="Project Structure" icon="document-duplicate" >}}
+  {{< card url="velocity" title="Velocity" icon="bolt" >}}
   {{< card url="configuration" title="Configuration" icon="adjustments-vertical" >}}
 {{< /cards >}}

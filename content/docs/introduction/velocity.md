@@ -1,11 +1,9 @@
 ---
-linkTitle: Documentation
-title: The F6 Framework
+title: Velocity
+weight: 1
 ---
 
-The F6 Framework provides a structured, holistic approach to building software with intention, with thoughtful communication and alignment across six core principles.
-
-## Velocity
+## Background
 
 _Moving with purpose and precision to deliver lasting impact._
 
@@ -14,7 +12,3 @@ _Moving with purpose and precision to deliver lasting impact._
 This aspect recognizes a sliding scale: are you building for the "here and now," accepting the potential for more significant rewrites later, or investing in a foundation that supports seamless evolution over time? Both approaches have their place, depending on the system’s goals, constraints, and maturity. [Software is never truly "done," and every decision made today influences how effectively it can evolve tomorrow.](https://insights.jahnelgroup.com/software-is-a-depreciating-asset-why-your-software-is-never-done)
 
 > Operating with intention involves trade-offs, as acting without thoughtful deliberation or clear purpose can create misalignment between stakeholders and the tech team. 
-
-{{< cards >}}
-  {{< card url="getting-started" title="Get Started" icon="document-text" subtitle="Create your docs in just 5 minutes!" >}}
-{{< /cards >}}
