@@ -1,5 +1,5 @@
 ---
-title: Introduction
+title: Foundations
 weight: 2
 sidebar:
   open: true
