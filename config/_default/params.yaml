@@ -12,12 +12,12 @@ appearance:
 marketing:
   seo:
     site_type: Project
-    local_business_type: ''
-    org_name: ''
+    local_business_type: 'Software Consutling'
+    org_name: 'Steven Zgaljic'
     description: 'A framework for building better software with a clear, adaptable approach for success.'
     twitter: ''
   analytics:
-    google_analytics: ''
+    google_analytics: 'G-CP0FEM9P19'
     google_tag_manager: ''
     microsoft_clarity: ''
     baidu_tongji: ''
