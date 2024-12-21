@@ -6,6 +6,10 @@ sidebar:
 ---
 
 {{< cards >}}
-  {{< card url="velocity" title="Velocity" icon="bolt" >}}
-  {{< card url="configuration" title="Configuration" icon="adjustments-vertical" >}}
+  {{< card url="volatility" title="Volatility" icon="bolt" >}}
+  {{< card url="capability" title="Capability" icon="puzzle-piece" >}}
+  {{< card url="dependence" title="Dependence" icon="link" >}}
+  {{< card url="security" title="Security" icon="shield-check" >}}
+  {{< card url="resilience" title="Resilience" icon="server" >}}
+  {{< card url="investment" title="Investment" icon="chart-pie" >}}
 {{< /cards >}}
