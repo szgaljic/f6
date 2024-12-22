@@ -17,16 +17,16 @@ sections:
       items:
         - name: Volatility 
           icon: bolt
-          description: Navigating change with precision and purpose.
+          description: Navigating the contours of change with precision and purpose.
         - name: Capability
           icon: puzzle-piece
-          description: Ensuring the software delivers its intended purpose with precision and value.
-        - name: Dependence
+          description: Ensuring software delivers its intended purpose with excellence.
+        - name: Dependency
           icon: link
           description: Harmonizing internal and external components to create cohesive, effective systems.
         - name: Security
           icon: shield-check
-          description: Protecting systems and users with vigilance and intent.
+          description: Protecting systems and users with vigilance and detail.
         - name: Resilience
           icon: server
           description: Building systems that endure, adapt, and perform under all conditions.
@@ -36,7 +36,7 @@ sections:
   - block: cta-card
     content:
       title: "Bring clarity to software development."
-      text: The F6 Framework empowers teams to navigate complexity with purpose. This holistic approach to software helps you align technical decisions with business goals for sustainable success.
+      text: The F6 Framework empowers teams to navigate the complexity of building software with purpose. This holistic approach to development helps align technical decisions with business goals for sustainable success.
       button:
         text: Get Started
         url: https://hugoblox.com/templates/details/docs/

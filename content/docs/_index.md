@@ -5,7 +5,7 @@ title: The F6 Framework
 
 The F6 Framework provides a structured, holistic approach to building software with intention, with thoughtful communication and alignment across six core principles.
 
-## Volatility
+<span style="font-size: 2em; font-weight: bold; color: white">Volatility</span>
 
 _Navigating change with precision and purpose._
 
@@ -17,7 +17,7 @@ This aspect recognizes a sliding scale: are you building for the "here and now,"
 
 Operating with intention involves trade-offs, as acting without thoughtful deliberation or clear purpose can create misalignment between stakeholders and the tech team. 
 
-## Capability
+<span style="font-size: 2em; font-weight: bold; color: white">Capability</span>
 
 _Ensuring the software delivers its intended purpose with precision and value._
 
@@ -27,19 +27,19 @@ This foundation emphasizes delivering the right functionality, at the right time
 
 A system that fulfills its purpose with precision and clarity becomes not just functional, but invaluable. 
 
-## Dependence
+<span style="font-size: 2em; font-weight: bold; color: white">Dependency</span>
 
 _Harmonizing internal and external components to create cohesive, effective systems._
 
-No software system exists in isolation. Every application relies on an ecosystem of tools, libraries, platforms, and services, each playing a role in its capability and success. **Dependence** focuses on strategically managing this ecosystem—deciding what to build, what to buy, and how to seamlessly connect all the pieces.
+No software system exists in isolation. Every application relies on an ecosystem of tools, libraries, platforms, and services, each playing a role in its capability and success. **Dependency** focuses on strategically managing this ecosystem—deciding what to build, what to buy, and how to seamlessly connect all the pieces.
 
 This foundational aspect is about understanding the core identity of your software: what makes it unique and mission-critical? This identity informs decisions about ownership versus reliance. 
 
 Each trade-off requires deep consideration—relying on third-party solutions can accelerate development and offload complexity but introduces risks, such as vendor lock-in, dependency vulnerabilities, or misalignment with future needs. 
 
-Ultimately, Dependence challenges teams to think holistically about the ecosystem their software inhabits.
+Ultimately, Dependency challenges teams to think holistically about the ecosystem their software inhabits.
 
-## Security
+<span style="font-size: 2em; font-weight: bold; color: white">Security</span>
 
 _Protecting systems and users with vigilance and intent._
 
@@ -49,7 +49,7 @@ The **Security** foundation emphasizes building protection into every layer of t
 
 Regardless of the scale, security must never be an afterthought.
 
-## Resilience
+<span style="font-size: 2em; font-weight: bold; color: white">Resilience</span>
 
 _Building systems that endure, adapt, and perform under all conditions._
 
@@ -59,7 +59,7 @@ At its core, Resilience is about engineering for the unexpected. Systems must be
 
 Resilience challenges teams to think beyond functionality, embedding robustness, availability, and performance into the core of their design.
 
-## Investment
+<span style="font-size: 2em; font-weight: bold; color: white">Investment</span>
 
 _Aligning time, money, and resources to deliver value with intent._
 
