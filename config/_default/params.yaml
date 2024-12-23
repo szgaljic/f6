@@ -8,6 +8,13 @@ appearance:
   mode: dark
   color: blue
 
+social:
+  twitter: "https://twitter.com/yourprofile"
+  facebook: "https://facebook.com/yourprofile"
+  email: "mailto:your.email@example.com"
+  linkedin: "https://linkedin.com/in/yourprofile"
+  whatsapp: "https://wa.me/yourphonenumber"
+
 # SEO
 marketing:
   seo:

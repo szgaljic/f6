@@ -1,12 +1,11 @@
 ---
-title: Terms of Service
+title: License
 date: 2024-11-12
 share: false
 ---
 
-By accessing or using this website, you agree to the following terms:
+Except where otherwise noted, content on this site is licensed under a [Creative Commons Attribution 4.0 International License.](https://creativecommons.org/licenses/by/4.0/)
 
-* **Use of Content:** The content on this website is for informational purposes only. You may not reproduce, distribute, or modify any content without permission.
-* **Disclaimer:** This website is provided "as is" without warranties of any kind. 
-* **Links to Other Websites:** This website may contain links to third-party websites. These links are provided for your convenience only and do not imply endorsement.
-* **Governing Law:** These terms are governed by the laws of New York, US.
+<a href="https://creativecommons.org/licenses/by/4.0/">
+  <img src="https://i.creativecommons.org/l/by/4.0/88x31.png" alt="Creative Commons License" style="display: inline-block; margin-top: 10px;">
+</a>

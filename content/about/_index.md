@@ -1,8 +1,5 @@
 ---
 title: About
-toc: true
-reading_time: false
-pager: false
 ---
 
 ## Why I Created the Framework
@@ -15,7 +12,7 @@ This framework defines six foundational aspects of software development: Volatil
 
 ## About Me
 
-Hi, I’m Steven. I help large enterprises and mid-sized companies transform technology frustrations into clear, actionable strategies. With deep expertise in technology planning, system architecture, and leadership, I specialize in aligning technology with business goals to unlock real value.
+Hi, I’m [Steven Zgaljic](https://www.linkedin.com/in/steven-zgaljic-92340770/). I help large enterprises and mid-sized companies transform technology frustrations into clear, actionable strategies. With deep expertise in technology planning, system architecture, and leadership, I specialize in aligning technology with business goals to unlock real value.
 
 Throughout my career, I’ve seen the power of strong communication in driving successful outcomes. The F6 Framework is a culmination of these experiences—a way to simplify complex projects, align perspectives, and deliver pragmatic, lasting solutions.
 
