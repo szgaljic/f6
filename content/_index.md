@@ -27,7 +27,7 @@ sections:
         - name: Security
           icon: shield-check
           description: Protecting systems and users with vigilance and detail.
-        - name: Resilience
+        - name: Resiliency
           icon: server
           description: Building systems that endure, adapt, and perform under all conditions.
         - name: Investment
