@@ -6,10 +6,10 @@ sidebar:
 ---
 
 {{< cards >}}
-  {{< card url="volatility" title="Volatility" icon="bolt" >}}
-  {{< card url="capability" title="Capability" icon="puzzle-piece" >}}
-  {{< card url="dependency" title="Dependency" icon="link" >}}
-  {{< card url="security" title="Security" icon="shield-check" >}}
-  {{< card url="resiliency" title="Resiliency" icon="server" >}}
-  {{< card url="investment" title="Investment" icon="chart-pie" >}}
+  {{< card url="/docs/foundations/volatility/" title="Volatility" icon="bolt" >}}
+  {{< card url="/docs/foundations/capability/" title="Capability" icon="puzzle-piece" >}}
+  {{< card url="/docs/foundations/dependency/" title="Dependency" icon="link" >}}
+  {{< card url="/docs/foundations/security/" title="Security" icon="shield-check" >}}
+  {{< card url="/docs/foundations/resiliency/" title="Resiliency" icon="server" >}}
+  {{< card url="/docs/foundations/investment/" title="Investment" icon="chart-pie" >}}
 {{< /cards >}}

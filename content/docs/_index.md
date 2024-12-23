@@ -3,6 +3,8 @@ linkTitle: Documentation
 title: The F6 Framework
 ---
 
+## Introduction
+
 The F6 Framework provides a structured, holistic approach to building software with intention, fostering thoughtful communication and alignment across six foundational aspects of software development.
 
 Each foundational aspect—Volatility, Capability, Dependency, Security, Resiliency, and Investment—has been chosen because decisions made within these domains hold substantial weight in determining the success of a project. These are the areas where trade-offs are made, where challenges emerge, and where alignment between stakeholders and implementation teams becomes critical.

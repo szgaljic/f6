@@ -17,7 +17,7 @@ sections:
       items:
         - name: Volatility 
           icon: bolt
-          description: Navigating the contours of change with precision and purpose.
+          description: Navigating the contours of change with curiosity and precision.
         - name: Capability
           icon: puzzle-piece
           description: Ensuring software delivers its intended purpose with excellence.
