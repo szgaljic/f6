@@ -42,7 +42,7 @@ header:
     button:
       enable: true
       text: "Get Involved"
-      url: "https://stevenzgaljic.com/"
+      url: "about/"
     # show_search: true
     show_theme_chooser: true
 

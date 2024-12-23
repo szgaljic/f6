@@ -8,6 +8,9 @@ main:
   - name: Documentation
     url: docs/
     weight: 20
+  - name: About
+    url: about/
+    weight: 30
 
 
 sidebar:
