@@ -5,7 +5,7 @@ title: The F6 Framework
 
 ## Introduction
 
-The F6 Framework provides a structured, holistic approach to building software with intention, fostering thoughtful communication and alignment across six foundational aspects of software development.
+**The F6 Framework** provides a structured, holistic approach to building software with intention, fostering thoughtful communication and alignment across six foundational aspects of software development.
 
 Each foundational aspect—Volatility, Capability, Dependency, Security, Resiliency, and Investment—has been chosen because decisions made within these domains hold substantial weight in determining the success of a project. These are the areas where trade-offs are made, where challenges emerge, and where alignment between stakeholders and implementation teams becomes critical.
 
@@ -16,9 +16,9 @@ The framework is designed to illuminate key questions and decisions within each 
 - When a system relies on extensive **Dependency** (third-party tools, cloud services, or libraries), the complexity of external dependencies can introduce vulnerabilities. Without adequate **Security** measures, these integrations might expose the system to attacks or data breaches.
 - A low **Investment** magnifies the trade-offs between all other foundations—the more you focus on one, the less you can afford the other.
 
-The interplay between these foundations is at the heart of the F6 Framework. By understanding the importance of each foundation, the key questions and decisions they encompass, and the relationships between them, teams can align priorities and navigate challenges more effectively.
+The interplay between these foundations is at the heart of F6. By understanding the importance of each foundation, the key questions and decisions they encompass, and the relationships between them, teams can align priorities and navigate challenges more effectively.
 
-Ultimately, the F6 Framework serves as a "translation vocabulary" between stakeholders and implementation teams. It provides a shared language to discuss and evaluate trade-offs, ensuring that every decision is informed, intentional, and aligned with the project’s goals. With this framework, organizations can unlock the potential trapped in communication stalemates, enabling teams to build systems that are not only functional but deeply impactful.
+Ultimately, F6 serves as a "translation vocabulary" between stakeholders and implementation teams. It provides a shared language to discuss and evaluate trade-offs, ensuring that every decision is informed, intentional, and aligned with the project’s goals. With this framework, organizations can unlock the potential trapped in communication stalemates, enabling teams to build systems that are not only functional but deeply impactful.
 
 {{< cards >}}
   {{< card url="/docs/foundations/volatility/" title="Volatility" icon="bolt" >}}

@@ -46,17 +46,25 @@ Volatility manifests in various ways depending on the context of the project. He
 
 ### Identifiy areas of Volatility 
 
-Identifying volatility requires both structured inquiry and a mindset of curiosity. Stakeholders and developers must engage in open-ended conversations to surface potential areas of change. Here are some questions that can guide this process:
+Identifying volatility requires structured inquiry, curiosity, and effective techniques to surface areas of potential change. Stakeholders and engineers must engage in collaborative activities to tease out workflows, user interactions, feature sets, and system events. These industry-standard techniques can help:
 
-- What are the core goals of this system?
+- **Event Storming:** A collaborative workshop technique for mapping out system events, workflows, and domain boundaries, enabling teams to visualize where changes are likely to occur.
+- **Story Mapping:** A visual method to break down user journeys and feature sets, focusing on user needs and identifying areas of uncertainty or variability.
+- **Journey Mapping:** Mapping the end-to-end customer experience to uncover key interactions and dependencies, especially useful in customer-facing systems.
+- **Mind Mapping:** Brainstorming and organizing ideas around workflows or features to identify relationships and areas that may evolve.
+- **Domain-Driven Design (DDD):** Identifying bounded contexts and domains to align software architecture with business operations, revealing areas of volatility tied to domain boundaries.
+
+Engaging in open-ended conversations are also great ways to surface potential areas of change. Here are some example questions that can guide this process:
+
+- **What are the core goals of this system?**
     - Understanding the business’s top priorities can highlight where flexibility might be needed to achieve them.
-- What is most likely to change in the next 6-12 months?
+- **What is most likely to change in the next 6-12 months?**
     - For example, will user needs evolve, will integrations shift, or will the system scale significantly?
-- What are the known unknowns?
+- **What are the known unknowns?**
     - Identify areas where requirements are unclear, or where decisions are being deferred.
-- What external factors could impact this system?
+- **What external factors could impact this system?**
     - Consider market conditions, customer feedback, regulations, or vendor updates.
-- What would happen if this system needed to double its capacity?
+- **What would happen if this system needed to double its capacity?**
     - This question often uncovers architectural limitations or areas needing flexibility.
 
 Encouraging stakeholders to think about "what if" scenarios helps surface areas of volatility that might not otherwise be apparent. These conversations can also prompt the team to prioritize clarity around areas of uncertainty, ensuring assumptions are well-understood and documented.
