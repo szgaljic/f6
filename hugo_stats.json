@@ -37,8 +37,14 @@
       "strong",
       "style",
       "svg",
+      "table",
+      "tbody",
+      "td",
+      "th",
+      "thead",
       "time",
       "title",
+      "tr",
       "ul"
     ],
     "classes": [
@@ -355,17 +361,22 @@
     "ids": [
       "about-me",
       "anticipating-change",
+      "architecture-design",
       "communicating-volatility",
+      "discovery-and-analysis",
       "examples-of-volatility",
       "features",
       "hide-button",
       "identifiy-areas-of-volatility",
       "introduction",
+      "mapping-exercises",
+      "mappings",
       "moon",
       "nav-menu",
       "nav-toggle",
       "overview",
       "page-bg",
+      "product-design",
       "section-cta-card",
       "show-button",
       "site-header",
@@ -374,6 +385,7 @@
       "trade-offs",
       "what-is-volatility",
       "why-i-created-the-framework",
+      "why-mapping-matters",
       "why-this-matters"
     ]
   }
