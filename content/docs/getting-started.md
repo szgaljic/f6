@@ -32,7 +32,7 @@ The F6 Framework’s strength lies in illuminating these interconnections, enabl
 
 ## F6 Discovery Process
 
-F6 is not a replacement for methodologies like Agile, Scrum, or Lean; rather, it enhances the most critical phase of any project—the beginning. This is the time when stakeholders are working to articulate their needs but often lack clarity about what they will receive in return. The F6 Discovery Process addresses this gap, offering an enhanced approach to requirements gathering and goal-setting that ensures alignment and reduces ambiguity.
+F6 enhances the most critical phase of any project—the beginning. This is the time when stakeholders are working to articulate their needs but often lack clarity about what they will receive in return. The F6 Discovery Process addresses this gap, offering an enhanced approach to requirements gathering and goal-setting that ensures alignment and reduces ambiguity.
 
 The **F6 Discovery Process** is a structured approach for uncovering critical details about each of the six foundations during the project formative stages. Its purpose is to identify foundational priorities, highlight potential risks, and evaluate trade-offs early, paving the way for informed decision-making and clear expectations.
 
