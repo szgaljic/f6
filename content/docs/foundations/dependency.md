@@ -5,7 +5,7 @@ weight: 3
 
 ## Overview
 
-_Harmonizing internal and external components to create cohesive, effective systems._
+_Harmonizing internal and external components to create cohesive, effective solutions._
 
 No software system exists in isolation. Every application relies on an ecosystem of tools, libraries, platforms, and services, each playing a role in its capability and success. **Dependency** focuses on strategically managing this ecosystem—deciding what to build, what to buy, and how to seamlessly connect all the pieces.
 

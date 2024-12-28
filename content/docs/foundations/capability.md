@@ -5,7 +5,7 @@ weight: 2
 
 ## Overview
 
-_Ensuring the software delivers its intended purpose with precision and value._
+_Ensuring technology delivers its intended purpose with excellence._
 
 At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability** represents the foundation of functionality—the workflows, features, and solutions that define the software’s purpose. 
 

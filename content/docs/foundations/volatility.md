@@ -5,7 +5,7 @@ weight: 1
 
 ## Overview
 
-_Navigating change with precision and purpose._
+_Navigating the contours of change with curiosity and precision._
 
 It’s been said that the only constant in life is change. Software is no different; it’s a depreciating asset that must be updated, altered, and maintained to stay effective.
 

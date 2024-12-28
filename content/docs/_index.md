@@ -13,7 +13,7 @@ title: The F6 Framework
 
 ### Foundations
 
-[Study each of the six foundations.](/docs/foundations/)
+[Learn about each of the six foundations.](/docs/foundations/)
 
 ### The F6 Discovery Process
 

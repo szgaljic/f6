@@ -5,7 +5,7 @@ weight: 5
 
 ## Overview
 
-_Building systems that endure, adapt, and perform under all conditions._
+_Building solutions that endure, adapt, and perform as expected._
 
 Software systems are constantly tested—not just by users but by the unpredictable forces of failure, demand, and change. **Resiliency** is the foundation that ensures a system remains available, reliable, and high-performing, even in the face of adversity. It encompasses the non-functional qualities that are often invisible until they fail but are critical for delivering a world-class user experience.
 
