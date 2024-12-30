@@ -15,27 +15,33 @@ A system that fulfills its purpose with precision and clarity becomes not just f
 
 ## Discovery and Analysis
 
-Understanding Capability starts with deep discussions during discovery sessions, where stakeholders and engineers collaborate to align on requirements. These sessions involve exploring the current state of the system, defining the future state, and identifying gaps between the two.
+Uncovering capability invovles in-depth discussions where stakeholders describe their needs, and the implementation team translates these into functional and non-functional requirements. 
 
-During these conversations, the mapping exercises—Product Design and Architecture Design—help provide structure, ensuring that discussions result in actionable insights. While this section introduces the importance of discovery, detailed guidance on conducting these sessions is covered in the F6 Discovery section.
+**Functional requirements** define the specific behaviors, features, or workflows the system must deliver to meet user and business needs, as distinct from **Non-Functional requirements**, which address performance, scalability, or other operational characteristics.
+
+The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, the F6 Framework enhances it by applying **Capability Mapping** to clearly correlate Business Needs into these requirements.
+
+The mapping exercises described below bring structure and provide a way to reason about what capabilties are required and why.
+
+{{% callout note %}}
+A detailed guidance on conducting holiistic discovery sessions is covered in [F6 Discovery Process](/docs/f6-discovery/).
+{{% /callout %}}
 
 ## Capability Mapping
 
-Central to the Capability foundation is the **Capability Mapping Exercise**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. This exercise ensures alignment, avoids redundancy, and provides clarity for decision-making.
+Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. This exercise ensures alignment, avoids redundancy, and provides clarity for decision-making.
 
-{{% callout warning %}}
 This process focuses on mapping and alignment. It does not address trade-offs, project planning, or risk evaluation, which are covered in other foundational aspects of the F6 Framework.
-{{% /callout %}}
 
 The steps are as follows:
 
-1. **Product Design Mapping:** Identify Business Needs and map them to Product Requirements and Technical Requirements. This step ensures a clear understanding of the "what" behind the product.
-2. **Technical Themes:** Group the Technical Requirements into logical themes to manage complexity and highlight overlaps.
-3. **Architecture Design Mapping:** Refine Technical Themes into specific implementations and map them to tools, platforms, or products.
+1. **Requirements Mapping:** Identify Business Needs and map them to Product Requirements and Technical Requirements. This step ensures a clear understanding of the "what" behind the product.
+2. **Theme Consolidation:** Group the requirements into logical themes to manage complexity and highlight overlaps.
+3. **Implementation Mapping:** Refine the requirements into themes, mapping them to specific implementations techniques, tools and products.
 
-### Product Design Mapping
+### Requirements Mapping
 
-The **Product Design Mapping** exercise begins by identifying high-level **Business Needs**, which represent the core drivers of value for the solution. These are then mapped to **Product Requirements**, which define the features and behaviors the software must exhibit to meet those needs. Finally, these product requirements are translated into actionable **Technical Requirements** that can be implemented by the engineering team.
+The **Requirements Mapping** exercise begins by identifying high-level **Business Needs**, which represent the core drivers of value for the solution. These are then mapped to **Product Requirements**, which define the features and behaviors the software must exhibit to meet those needs. Finally, these product requirements are translated into actionable **Technical Requirements** that can be implemented by the engineering team.
 
 For the purposes of concrete illustration, we will use a FinTech payment processing system as an example to show how business goals translate into technical execution.
 
@@ -51,9 +57,11 @@ For the purposes of concrete illustration, we will use a FinTech payment process
 | Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         | Event-driven architectures, Low-latency message queues, Real-time processing frameworks |
 | Interoperability             | Integration with financial institutions, Open API ecosystem, Cross-border payment capabilities | API management platforms, Protocol translation layers, Message format standardization    |
 
-This step ensures that technical teams understand the connection between business objectives and their work. For example, "Fraud Prevention and Detection" translates into a set of tools and techniques that proactively identify and mitigate risks. The emphasis here is on capturing the "what" without diving into specific tools or solutions.
+This table provides a means to understand the connection between business needs, product behavioral requirements and technical implementation requirements. 
 
-### Technical Themes
+For example, "Fraud Prevention and Detection" translates into a set of tools and techniques that proactively identify and mitigate risks. The emphasis here is on capturing the "what" without diving into specific tools or solutions.
+
+### Theme Consolidation
 
 After defining the Technical Requirements, the next step is grouping them into themes. Themes help abstract and organize the requirements into manageable clusters. These groupings reduce redundancy and provide a clear structure for implementation strategies.
 
@@ -101,9 +109,9 @@ In this example, requirements like "Load balancing" and "Horizontal scaling" nat
 
 The focus is on flexibility. Themes provide structure but do not impose rigid boundaries, making them adaptable to various contexts.
 
-### Architecture Design Mapping
+### Implementation Mapping
 
-The final step refines the Technical Themes into actionable implementation strategies. These strategies are then linked to tools, platforms, or products that can fulfill them.
+The final step refines the themes into actionable implementation strategies. These strategies are then linked to tools, platforms, or products that can fulfill them.
 
 | **Technical Theme**         | **Implementation**                                    | **Tools & Products**                                                            |
 |------------------------------|------------------------------------------------------|---------------------------------------------------------------------------------|
