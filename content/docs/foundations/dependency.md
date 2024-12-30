@@ -31,19 +31,6 @@ When deciding between building a custom CRM solution and adopting a commercial o
 | **Buy (HubSpot)**   | Quick deployment, lower upfront cost         | Access to updates and vendor support       | Limited customization, vendor lock-in| Scaling limitations                  |
 | **Hybrid**          | Faster deployment with partial customization | Balanced flexibility                       | Moderate effort and cost             | Integration and compatibility risks   |
 
-### Multi-Tenancy (SaaS Example)
-When designing a SaaS platform, deciding on a multi-tenancy model is a critical architectural decision. This choice impacts operational costs, security, scalability, and software complexity. The two common approaches—shared database and database-per-tenant—each have distinct trade-offs, and a hybrid approach can offer a balance depending on the business goals and constraints.
-
-- **Option 1 - Shared Database Model:** A single database serves all tenants, segregating data using identifiers. This approach is cost-effective and simpler to manage but comes with increased risks around data isolation and performance issues.
-- **Option 2 - Database-Per-Tenant Model:** Each tenant has its own database, providing better data isolation and customization options. However, this increases operational complexity and costs.
-- **Option 3 - Hybrid Approach:** A hybrid model combines aspects of both, such as grouping smaller tenants into a shared database while providing high-value tenants with dedicated databases.
-
-| **Option**               | **Short-Term Advantage**                        | **Long-Term Advantage**                    | **Short-Term Risk**                      | **Long-Term Risk**                       |
-|--------------------------|------------------------------------------------|-------------------------------------------|------------------------------------------|------------------------------------------|
-| **Shared Database**      | Cost-efficient, easier to implement            | Lower operational overhead                 | Limited data isolation, potential bottlenecks | Increased complexity as tenant count grows |
-| **Database-Per-Tenant**  | Strong data isolation, tenant-specific scalability | High flexibility and security              | Higher operational cost and setup effort  | Maintenance and scaling challenges        |
-| **Hybrid**               | Balanced cost and flexibility                   | Tailored solutions for diverse tenant needs| Increased complexity in design            | Compatibility and consistency challenges   |
-
 ### Software Library (Docker Base Image Example)
 
 Modern software development often relies on containers, which are a lightweight and reliable way to run software. Containers can be compared to standardized shipping containers—they package everything needed to run an application in a predictable and portable format. Docker is a tool that simplifies the creation and management of these containers, ensuring they include all the necessary components for smooth operation.
