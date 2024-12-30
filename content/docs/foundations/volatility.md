@@ -19,7 +19,11 @@ Operating with intention involves trade-offs, as acting without thoughtful delib
 
 Volatility in software refers to the degree of uncertainty and change expected over the lifecycle of a system. It encompasses both internal factors, such as evolving requirements, and external influences, such as market shifts, customer demands, or integration with third-party systems.
 
-To align stakeholders and developers, the concept of volatility serves as a translation vocabulary—a way to articulate where change is expected, and how it will impact the system. Developers must understand that business needs often evolve quickly, but stakeholders must also appreciate that without clear communication, engineers are left to make assumptions about what parts of the system will remain stable and what will need to adapt.
+{{% callout note %}}
+Uncertainty is the most significant factor influencing the success of a project. It drives both over-engineering and the failure to meet expectations.
+{{% /callout %}}
+
+The concept of volatility should serve as a translation vocabulary—a way to articulate where change is expected, and how it will impact the system. Developers must understand that business needs often evolve quickly, but stakeholders must also appreciate that without clear communication, engineers are left to make assumptions about what parts of the system will remain stable and what will need to adapt.
 
 ### Trade-Offs
 

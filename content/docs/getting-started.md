@@ -30,7 +30,7 @@ Decisions in one foundation often affect others. For instance:
 
 The F6 Framework’s strength lies in illuminating these interconnections, enabling informed, intentional decision-making.
 
-## F6 Discovery Process
+## F6 Discovery
 
 F6 enhances the most critical phase of any project—the beginning. This is the time when stakeholders are working to articulate their needs but often lack clarity about what they will receive in return. The **F6 Discovery Process** addresses this gap, offering an enhanced approach to requirements gathering and goal-setting that ensures alignment and reduces ambiguity.
 
@@ -61,6 +61,14 @@ Straightforward foundations like **Capability** and **Investment** provide immed
 
 - Ignoring **Volatility** may result in rigid solutions that are costly to adapt as requirements shift.
 - Underestimating **Resiliency** can lead to catastrophic failures in production environments—impacting businesses when they least expect it.
+
+## Trade-offs
+
+Trade-offs are an inherent part of software development, where every decision involves balancing competing priorities. These decisions occur at both high and low levels, influencing everything from system architecture to individual features. High-level trade-offs, such as choosing a fast/simple design for a feature versus loger-term/complex design, are often visible and easier to grasp. However, low-level trade-offs, like selecting a specific software component, can have cascading impacts that require technical expertise to fully understand.
+
+For **stakeholders and business leaders**, it’s on your to be curious and attentive to these trade-offs. Ask questions, probe for clarity, and seek to understand the implications of decisions being made. Doing so helps uncover potential risks and ensures alignment with broader goals.
+
+For **implementation team members**, remember that you are not alone in making these trade-offs. It is your responsibility to translate the technical nuances and potential impacts of these decisions into terms that stakeholders can understand. By bridging this gap, you help improve collaboration and ensure that trade-offs are intentional and aligned with the project’s objectives.
 
 ## Next Steps
 
