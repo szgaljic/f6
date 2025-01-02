@@ -9,7 +9,9 @@ _Ensuring technology delivers its intended purpose with excellence._
 
 At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
 
-The Capability foundation emphasizes delivering the right functionality, at the right time, to the right users. It's about carefully considering the purpose of the software and prioritizing it's feature sets. Capability also underscores the importance of intentionality. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
+The Capability foundation is about carefully considering the purpose of the software and underscores the importance of intentionality. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
+
+It also provides a powerful means for business stakeholders to understand how their needs cascade down to impact product features and technical implementation.
 
 ## What is Capability?
 
@@ -151,4 +153,48 @@ This stage offers a checkpoint where any misalignments between product and techn
 
 ### Implementation
 
-TODO.
+The last step is to bridge the gap between technical requirements and the practical technologies and architectures that bring them to life. At this stage, decisions are made about how the solution will be built—down to the frameworks, tools, and platforms. While stakeholders might see only the end results of these decisions, the underlying choices directly impact the solution's adaptability and alignment with business goals for years to come. 
+
+#### The Base Foundation
+
+A critical, often invisible, part of this process is the **base foundation**—the initial setup and architectural blueprint that underpins the entire system. This base foundation determines how other layers of the solution are developed and interacts with the business needs through technical requirements.
+
+For example, consider the setup of cloud environments, deployment pipelines, or the selection of a programming language. These decisions aren't directly tied to a specific business need but are critical for enabling all technical requirements to be met.
+
+{{% callout note %}}
+Base foundations often reflect the expertise and experience of the technical team involved. Without structured evaluation or guidance, these decisions will default to what the team knows best—whether or not it’s the best fit for the business goals.
+{{% /callout %}}
+
+It takes an experienced leader with both technical and business acumen to evaluate multiple options and ensure the chosen foundation aligns with both technical requirements and business priorities.
+
+#### Implementation Mapping
+
+To illustrate how base foundations influence implementation, consider two fictional experienced tech leads:
+
+- **Alex**, an expert in GCP/Containers, proposes a foundation based on Google Cloud Platform, Kubernetes, and Java/Spring Boot.
+- **Jessica**, proficient in AWS/Serverless, suggests a foundation leveraging AWS Lambda, DynamoDB, and Node.js.
+
+Select six of the technical requirements from the previous step, two from each product requirement, we can demonstrate mapping them into different base foundations.
+
+| **Technical Requirement**            | **GCP/Containers**                                                              | **AWS/Serverless**                                                                 |
+|--------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
+| Real-Time Event Processing Systems   | Pub/Sub for streaming; scalable Kubernetes services                             | EventBridge for orchestration; Lambda-based real-time processing pipelines       |
+| Continuous System Monitoring & Alerting | Stackdriver integration for logging and alerting                                | CloudWatch dashboards and custom alarms                                         |
+| Secure Data Storage & Encryption     | Encrypted Cloud SQL instances and managed encryption keys                       | DynamoDB encryption at rest; KMS-managed keys for additional security           |
+| API Integrations for Identity Verification | RESTful APIs built with Spring Boot, hosted on Kubernetes                      | Lambda functions for API requests, integrating with Cognito for identity        |
+| Multi-Channel Notification Delivery  | Cloud Functions for email/SMS; Pub/Sub for asynchronous notification workflows | SNS for SMS/email; Lambda for dynamic notification rule handling                |
+| Dynamic Configuration of Notification Rules | ConfigMaps in Kubernetes for dynamic rule management                           | Parameter Store and Lambda for dynamic updates                                  |
+
+Both of these foundations can end up satisfying the technical requirements, yet there non-obvious impacts of their decisons. 
+
+#### Capability Chain
+
+To understand the mapping chain in action, let’s examine one specific example: Real-Time Event Processing Systems.
+
+- **Business Need:** Detect and prevent fraudulent transactions.
+- **Product Requirement:** Real-time fraud monitoring.
+- **Technical Requirement:** Real-time event processing systems.
+    - **Implementation (GCP/Containers):** Pub/Sub is used to process streaming data, with Kubernetes scaling services as needed.
+    - **Implementation (AWS/Serverless):** EventBridge orchestrates event-driven workflows, triggering Lambda functions to process data in real time.
+
+This example showcases how the entire chain—from high-level business objectives to low-level implementation—is informed by both technical expertise and strategic decision-making.
