@@ -36,8 +36,8 @@ F6 enhances the most critical phase of any project—the beginning. This is the 
 
 It is a structured approach for uncovering critical details about each of the six foundations during the project formative stages. Its purpose is to identify foundational priorities, highlight potential risks, and evaluate trade-offs early, paving the way for informed decision-making and clear expectations.
 
-- **Volatility**: "What assumptions might change?"
 - **Capability**: "What are the must-have features?"
+- **Volatility**: "What assumptions might change?"
 - **Dependency**: "What third-party components are required?"
 - **Security**: "What compliance requirements apply?"
 - **Resiliency**: "What happens if X fails?"
@@ -83,8 +83,8 @@ By framing decisions in terms of their impact on the foundational priorities, te
 Next, explore the in-depth material on each of the six foundations. Once familiar with these concepts, proceed to the [F6 Discovery Process](/docs/f6-discovery/) section to learn how to apply this framework to uncover priorities, risks, and trade-offs in the early stages of your project.
 
 {{< cards >}}
-  {{< card url="/docs/foundations/volatility/" title="Volatility" icon="bolt" >}}
   {{< card url="/docs/foundations/capability/" title="Capability" icon="puzzle-piece" >}}
+  {{< card url="/docs/foundations/volatility/" title="Volatility" icon="bolt" >}}
   {{< card url="/docs/foundations/dependency/" title="Dependency" icon="link" >}}
   {{< card url="/docs/foundations/security/" title="Security" icon="shield-check" >}}
   {{< card url="/docs/foundations/resiliency/" title="Resiliency" icon="server" >}}

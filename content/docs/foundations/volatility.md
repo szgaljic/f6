@@ -1,6 +1,6 @@
 ---
 title: Volatility
-weight: 1
+weight: 2
 ---
 
 ## Overview
@@ -18,7 +18,7 @@ This aspect recognizes a sliding scale: are you building for the "here and now,"
 **Volatility** refers to the degree of uncertainty and change over the lifetime of a solution. It encompasses both internal factors, such as evolving requirements, and external influences, such as market shifts, customer demands, or integration with third-party systems.
 
 {{% callout note %}}
-Uncertainty is the most significant factor influencing the success of a project. It drives both over-engineering and the failure to meet expectations.
+**Uncertainty** is the most significant factor influencing the success of a project. It drives both over-engineering and the failure to meet expectations.
 {{% /callout %}}
 
 Anticipating change is difficult. Stakeholders often stuggle with future uncertainties, and without clear guidance, implementation teams will either spend excessive time creating costly, overengineered solutions or default to overly rigid, generic designs that fail to meet actual needs.

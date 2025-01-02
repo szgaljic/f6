@@ -1,6 +1,6 @@
 ---
 title: Capability
-weight: 2
+weight: 1
 ---
 
 ## Overview
@@ -33,6 +33,14 @@ Capability can be described in several ways. Here are a few high-level examples:
 
 - **Scalability for Growth:** An e-commerce site designed for a small customer base must be capable of scaling to handle seasonal spikes, like Black Friday traffic, with features such as dynamic resource allocation and robust caching mechanisms.
 
+### Everything is Capability
+
+As you'll see... TBD
+
+## Priorities
+
+MVP, Roadmap
+
 ## Capability Mapping
 
 Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. 
@@ -45,104 +53,102 @@ The steps are as follows:
 2. **Product to Technical:** TBD.
 3. **Implementation:** TBD.
 
-### Business to Product
+### Business to Product Requirements
 
-Every solution starts with trying to understand its purpose and the problems it aims to solve. For illustration, we will use a **FinTech payment processing system** as an example to show how business goals translate into technical execution.
+Every solution starts with trying to understand its purpose and the problems it aims to solve. For illustration, we will use a **FinTech payment processing system** as an example to show how business goals translate into execution.
 
-We start by identifying **business needs**—the core drivers of value for the organization and its users. Imagine the stakeholders gathered in a strategy meeting, discussing their goals for the new platform. Their conversations might sound like this:
+Imagine a strategy meeting where stakeholders are sharing their vision for the new platform. They aren’t speaking in technical terms; they’re articulating broad goals that matter to the business and its customers. For instance, two of their statements might be:
 
 - _"We need to proactively detect and prevent fraudulent transactions to protect our customers and our reputation."_
 - _"Compliance with financial regulations like AML and KYC is non-negotiable."_
-- _"Our platform must handle thousands of transactions per second and support customers across multiple regions."_
-- _"Customers expect a seamless checkout experience, whether they’re on desktop or mobile."_
-- _"We want to reduce revenue loss by optimizing transaction retries and routing payments efficiently."_
-- _"Cost efficiency is key; we need to monitor and optimize our processing fees."_
-- _"Data security is paramount; sensitive payment information must be protected at all costs."_
-- _"Instant payment confirmations and real-time updates are table stakes in today’s competitive landscape."_
-- _"We need our system to integrate seamlessly with financial institutions worldwide."_
 
-We can distill these statements down, and then map them into specific **Product Requirements**—the user-facing features and workflows required to fulfill those needs. These requirements provide a blueprint for what the platform must deliver to achieve its goals.
+On the surface, these seem straightforward. Fraud detection, prevention, and compliance—how hard can it be? But as we dive deeper, these statements unravel into a complex web of needs that the product must address.
 
-| **Business Need**           | **Product Requirements**                                                                 |
-|------------------------------|-----------------------------------------------------------------------------------------|
-| Payment Processing           | Payment gateway integrations |
-| Regulatory Compliance        | AML/KYC verification, Audit trails, Transaction reporting, Data retention policies       |
-| Scalability                  | High-volume transaction processing, Multi-region support, Dynamic resource allocation     |
-| Customer Retention           | Seamless checkout experience, Personalized recommendations, Multi-payment options         |
-| Revenue Optimization         | Transaction retries, Smart routing, Revenue leakage reports, Audit trails, Transaction reporting |
-| Cost Efficiency              | Optimized processing fees, Batch processing for settlements, Infrastructure cost monitoring |
-| Data Security and Privacy    | Encryption of sensitive data, Tokenization of payment information, Consent management     |
-| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
-| Interoperability             | Integration with financial institutions, Open API ecosystem, Cross-border payment capabilities |
+1. **Fraud Detection:** Identifying potentially fraudulent transactions before they are completed.
+2. **Fraud Prevention:** Blocking or mitigating fraudulent activity in real time.
+3. **Reputation Protection:** Ensuring trust by managing fraud risks proactively.
+4. **Regulatory Compliance:** Meeting AML (Anti-Money Laundering) and KYC (Know Your Customer) standards.
+5. **Auditability:** Providing detailed records for compliance audits.
+6. **Customer Verification:** Implementing workflows to verify user identities.
 
-For example, "Fraud Prevention and Detection" translates into a set of tools and techniques that proactively identify and mitigate risks. The emphasis here is on capturing the "what" without diving into specific tools or solutions.
+These refined business needs are still abstract but give us a clearer picture of what the platform must achieve. The next step is to translate these into **Product Requirements**—the tangible workflows and features the platform must offer.
 
-It’s common for product requirements to overlap so we can refine them down into **Product Themes**—groups of related features or workflows that represent a cohesive area of functionality. 
+| **Business Need(s)**            | **Product Requirement**                | **Description**                                                                       |
+|-------------------------------|----------------------------------------|---------------------------------------------------------------------------------------|
+| Fraud Detection               | Real-Time Fraud Monitoring             | Continuously track transactions for suspicious patterns.                              |
+| Fraud Detection               | Risk Scoring Workflow                  | Assign risk scores to transactions based on fraud indicators.                        |
+| Fraud Detection, Fraud Prevention | Alerts and Notifications           | Trigger alerts or workflows for flagged transactions.                                |
+| Fraud Prevention              | Transaction Blocking                   | Prevent high-risk transactions from being processed.                                 |
+| Fraud Prevention              | Fraud Mitigation Tools                 | Enable manual review and intervention for flagged activity.                          |
+| Fraud Detection, Fraud Prevention | Adaptive Rules Engine              | Allow dynamic updates to fraud detection rules.                                      |
+| Fraud Prevention, Reputation Protection | Customer Transparency        | Provide users with updates on flagged transactions.                                  |
+| Fraud Prevention, Reputation Protection | Incident Reporting            | Generate reports on fraud incidents to build accountability.                         |
+| Regulatory Compliance         | AML Checks                             | Automate Anti-Money Laundering screenings.                                           |
+| Regulatory Compliance         | KYC Verification                       | Verify customer identity during onboarding.                                          |
+| Regulatory Compliance         | Transaction Reporting                  | Submit required reports to regulators.                                               |
+| Auditability                  | Activity Logging                       | Maintain detailed, immutable records of all system activities.                       |
+| Auditability, Regulatory Compliance | Compliance Dashboards           | Provide visual tools for compliance officers to track adherence.                     |
+| Customer Verification         | Onboarding Workflow                    | Guide users through a seamless identity verification process.                        |
+| Customer Verification         | Document Upload and Validation         | Allow customers to upload identification documents for verification.                 |
+| Customer Verification         | Ongoing Verification                   | Re-verify customer identities periodically to ensure continued compliance.           |
 
-| Product Theme        | Product Requirements                                              |
-|----------------------|-------------------------------------------------------------------|
-| Multiple Payment gateway | Payment gateway integrations, Smart routing |
-| Fraud Detection      | Fraud monitoring, Transaction risk scoring, Alerts and notifications |
-| Advanced User Experience      | Seamless checkout interface, Multi-payment options, Instant payment confirmations |
-| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
-| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
-| Scalability          | High-volume transaction processing, Multi-region support, Dynamic resource allocation |
-| Compliance           | AML/KYC verification, Audit trails, Transaction reporting        |
-| Cost Optimization    | Transaction retry mechanisms, Smart routing, Optimized processing |
+Notice how much detail emerges from just two statements. For example, stakeholders didn’t explicitly ask for a **Compliance Dashboard**, but it’s an essential feature to help compliance officers manage and track regulatory requirements effectively. Similarly, **Transaction Blocking** wasn’t mentioned outright, but it’s a critical part of fraud prevention that aligns with the goal of protecting customers and the business.
 
+The product team has filled in the gaps, revealing needs that might not have been obvious initially. It also underscores how business needs cascade and expand with each conversation. 
 
-### Product to Technical
+{{% callout note %}}
+As a stakeholder, it’s crucial to pay close attention to how your statements are being interpreted. At the same time, sharing detailed insights about the system’s long-term vision is equally important, as it equips the team to plan for the system’s evolution and more effectively achieve future goals. This concept is explored further in the **Volatility** foundation.
+{{% /callout %}}
 
-Once product requirements are established, the next step is translating them into Technical Requirements. This step ensures captures that each product feature or workflow is backed by a defined set of technical specifications that can be implemented by engineers.
+### Product to Technical Requirements
 
-The process begins by organizing Product Requirements into Product Themes—groups of related features or workflows that represent a cohesive area of functionality. Product Themes allow for better prioritization and help identify synergies or overlaps among requirements.
+The conversation now shifts to deriving the **Technical Requirements**—broad characteristics that define what the underlying architecture and system must achieve. 
 
-| **Product Theme**           | **Product Requirements**                                                          |
-|------------------------------|-----------------------------------------------------------------------------------------|
-|  |  |
-|  |  |
-|  |  |
+We'll focus on three specific product requirements: **Real-Time Fraud Monitoring**, **KYC Verification**, and **Alerts and Notifications**. These examples demonstrate how functional and non-functional needs are considered and how the technical team begins to define the architecture's fundamental capabilities.
 
-ChatGPT: Write a narrative, then take those Product themes and map into Technical Requirements.
+Much like how the product team "fills in the gaps" for stakeholders, technical teams are "filling in the gaps" for the product team—considering scalability, data flows, processing needs, and other foundational technical factors. 
 
-| **Product Theme**           | **Technical Requirements**                                                          |
-|------------------------------|-----------------------------------------------------------------------------------------|
-|  |  |
-|  |  |
-|  |  |
+- **Real-Time Fraud Monitoring**
+    - How to handle large volumes of transactional data in real time.
+    - How to implement detection algorithms that can operate with minimal latency.
+    - How to design the system to scale with transaction growth.
+- **KYC Verification**
+    - How to securely collect, store, and manage customer identity information.
+    - How to integrate with external systems for identity verification (e.g., government databases or third-party services).
+    - How to ensure compliance with data retention policies and regulatory standards.
+- **Alerts and Notifications**
+    - How to trigger notifications based on predefined events or thresholds.
+    - How to deliver notifications across multiple channels (e.g., email, SMS, app alerts).
+    - How to ensure notifications are reliable and scalable.
 
-### Technical to Implementation
+Notice how in addition to the obvious functional requirements, they consider factors like performance, scalability, and security—critical elements that stakeholders might not explicitly articulate. Without guidance, technical teams will draw their own conclusions about how to address key aspects like **Resiliency** (performance and reliability), **Dependency** (dependencies and compatibility), or **Security** (data protection and compliance).
 
-| **Technical Requirement**                      | **Implementation**                        | **Tools & Products**                                                        |
-|------------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
-| Fraud monitoring                                | Real-time fraud detection system          | AWS Fraud Detector, Snowflake, Splunk                                      |
-| Alerts and notifications                        | Event-driven notification system          | AWS SNS, Twilio, Firebase                                                  |
-| Compliance with AML/KYC regulations             | Identity verification platform            | Okta, Auth0, Jumio                                                         |
-| Seamless checkout experience                    | Responsive checkout interface             | React, Vue, Flutter                                                        |
-| High-volume transaction processing              | Scalable distributed transaction handler  | AWS DynamoDB, Google Cloud Spanner, Apache Cassandra                       |
-| Multi-payment options                           | Payment gateway integration               | Stripe, Braintree, Adyen                                                   |
-| Personalized recommendations                    | Recommendation engine                     | TensorFlow, AWS Personalize, Google AI Recommendations                     |
-| Transaction retry mechanisms                    | Workflow engine with retry logic          | Apache Airflow, Temporal, Camunda                                          |
-| Smart routing to payment processors             | Payment processor routing algorithm       | Python custom logic, AWS Step Functions, Google Cloud Functions            |
-| Anomaly detection in transactions               | Machine learning-based anomaly detection  | Databricks, AWS SageMaker, Azure ML                                        |
-| Encryption of sensitive data                    | Data encryption service                   | AWS KMS, HashiCorp Vault, Google Cloud KMS                                 |
-| Tokenization of payment information             | Tokenization service                      | TokenEx, Braintree, Stripe                                                 |
-| Instant payment confirmations                   | Real-time message queue system            | AWS Kinesis, Apache Kafka, Google Pub/Sub                                  |
-| Logging and monitoring                          | Centralized logging and monitoring stack  | Splunk, Elastic Stack, AWS CloudWatch                                      |
-| Long-term data retention                        | Archival storage system                   | AWS S3 Glacier, Google Cloud Storage, Azure Blob Storage                   |
+{{% callout note %}}
+The F6 Framework offers stakeholders a chance to influcence the design of Capabilities at key low-level requirements through aspects such as **Resiliency**, **Dependency**, and **Security**—areas that might otherwise be overlooked.
+{{% /callout %}}
 
-## Trade-Offs
+The outcome is a set of Technical Requirements that provide a high-level blueprint for the system. 
 
-### Prioritization
+| **Product Requirement**      | **Technical Requirements**                                                    |
+|-------------------------------|-------------------------------------------------------------------------------|
+| Real-Time Fraud Monitoring    | Real-time event processing systems                                            |
+| --                            | Scalable data pipelines                                                       |
+| --                            | Low-latency anomaly detection algorithms                                      |
+| --                            | High-throughput transaction processing                                        |
+| --                            | Continuous system monitoring and alerting                                     |
+| KYC Verification              | Secure data storage and encryption                                            |
+| --                            | API integrations for external identity verification                           |
+| --                            | Identity validation workflows                                                 |
+| --                            | Regulatory-compliant data retention policies                                  |
+| --                            | Logging and audit trails for all KYC-related actions                          |
+| Alerts and Notifications      | Event-driven notification system                                              |
+| --                            | Multi-channel notification delivery                                           |
+| --                            | Reliable message queuing and processing                                       |
+| --                            | Dynamic configuration of notification rules                                   |
+| --                            | Monitoring and logging of notification workflows                              |
 
-## Impact
+This stage offers a checkpoint where any misalignments between product and technical teams can be resolved. 
 
-## Why Mapping Matters
+### Implementation
 
-The mapping exercises are critical to ensuring alignment between business and technical teams because they:
-
-- Help stakeholders and engineers visualize the connection between business needs and technical implementations.
-- Provide clarity on trade-offs between building custom solutions versus leveraging existing tools and products.
-- Foster a shared language for prioritizing features and understanding the impact of technical decisions on business outcomes.
-
-By leveraging these mappings, teams can make more informed decisions, align their efforts, and ensure the software system delivers its intended purpose while staying adaptable for future needs.
+TODO.

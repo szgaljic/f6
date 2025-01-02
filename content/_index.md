@@ -15,12 +15,12 @@ sections:
       title: The F6 Framework
       text: Helping business leaders achieve better technology project outcomes.
       items:
+        - name: Capability
+          icon: puzzle-piece
+          description: Ensuring technology delivers its intended purpose with excellence.      
         - name: Volatility 
           icon: bolt
           description: Navigating the contours of change with curiosity and precision.
-        - name: Capability
-          icon: puzzle-piece
-          description: Ensuring technology delivers its intended purpose with excellence.
         - name: Dependency
           icon: link
           description: Harmonizing internal and external components to create cohesive, effective solutions.
