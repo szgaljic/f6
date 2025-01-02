@@ -13,9 +13,9 @@ The **Volatility** foundation emphasizes the balance between rapid progress and 
 
 This aspect recognizes a sliding scale: are you building for the "here and now," accepting the potential for more significant rewrites later, or investing in a foundation that supports seamless evolution over time? Both approaches have their place, depending on the solutions goals, constraints, and maturity. [Software is never truly "done," and every decision made today influences how effectively it can evolve tomorrow.](https://insights.jahnelgroup.com/software-is-a-depreciating-asset-why-your-software-is-never-done)
 
-## What Is Volatility?
+## What is Volatility?
 
-Volatility refers to the degree of uncertainty and change over the lifetime of a solution. It encompasses both internal factors, such as evolving requirements, and external influences, such as market shifts, customer demands, or integration with third-party systems.
+**Volatility** refers to the degree of uncertainty and change over the lifetime of a solution. It encompasses both internal factors, such as evolving requirements, and external influences, such as market shifts, customer demands, or integration with third-party systems.
 
 {{% callout note %}}
 Uncertainty is the most significant factor influencing the success of a project. It drives both over-engineering and the failure to meet expectations.
@@ -64,6 +64,19 @@ Encouraging everyone to think about "what if" scenarios helps surface areas of v
 
 The key to success lies in embracing the shared responsibility between business and technology for identifying areas of change. Equally important is having a collaborative mindset when change arises—rather than assigning blame for why a solution falls short, teams should work together to understand what was overlooked and use those insights to better prepare for inevitable future changes.
 
+### Communicating Change
+
+Building for immediate needs prioritizes speed and simplicity, delivering results quickly. Future-proofing, on the other hand, aims to design solutions that evolve gracefully over time. Too much focus on the short-term can lead to expensive refactoring later, while over-indexing on future-proofing can delay time-to-market and overcomplicate the system.
+
+To effectively communicate "what ifs" and the impacts of trade-offs it's critical to frame it in terms that resonate with the business. This involves translating technical details into tangible business outcomes:
+
+- **Cost of Flexibility:** Explain how adding flexibility in a volatile area (e.g., building an extensible API) will increase initial development time but reduce costs and disruption when future changes are needed.
+- **Impact of Rigidity:** If a solution is designed without accounting for volatility, highlight the risks, such as expensive refactoring, downtime, or delayed market response when changes inevitably arise.
+- **Balancing Short-Term and Long-Term Goals:** Demonstrate how thoughtful investments in change management—like modular design or abstraction—can align with business timelines while avoiding technical debt.
+- **Realistic Expectations for Change:** Frame volatility as an expected and manageable reality, emphasizing that flexibility requires trade-offs but reduces risk over the system’s lifetime. For example:
+    - _“If we don’t account for the potential of pivoting to a B2B model, implementing those features later will cost 3x as much and delay delivery by 6 months.”_
+    - _“Building in flexibility now adds 10% to development time but ensures we can handle third-party API changes without a full rewrite.”_
+
 ## Trade-Offs
 
 Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few real world examples of volatility and possible trade-offs.
@@ -108,20 +121,9 @@ Consider, a logistics company initially using DynamoDB, an extremely fast yet ri
 
 Could the team have anticipated this shift in workflow when initially selecting the database? Was the focus on immediate cost-efficiency short-sighted, or was it the right choice based on the information available at the time? Did business stakeholders clearly communicate the potential for evolving analytics needs, or did the technology team miss early indicators of future requirements? 
 
-## Communicating Change
+## Impact
 
-Building for immediate needs prioritizes speed and simplicity, delivering results quickly. Future-proofing, on the other hand, aims to design solutions that evolve gracefully over time. Too much focus on the short-term can lead to expensive refactoring later, while over-indexing on future-proofing can delay time-to-market and overcomplicate the system.
-
-To effectively communicate "what ifs" and the impacts of trade-offs it's critical to frame it in terms that resonate with the business. This involves translating technical details into tangible business outcomes:
-
-- **Cost of Flexibility:** Explain how adding flexibility in a volatile area (e.g., building an extensible API) will increase initial development time but reduce costs and disruption when future changes are needed.
-- **Impact of Rigidity:** If a solution is designed without accounting for volatility, highlight the risks, such as expensive refactoring, downtime, or delayed market response when changes inevitably arise.
-- **Balancing Short-Term and Long-Term Goals:** Demonstrate how thoughtful investments in change management—like modular design or abstraction—can align with business timelines while avoiding technical debt.
-- **Realistic Expectations for Change:** Frame volatility as an expected and manageable reality, emphasizing that flexibility requires trade-offs but reduces risk over the system’s lifetime. For example:
-    - _“If we don’t account for the potential of pivoting to a B2B model, implementing those features later will cost 3x as much and delay delivery by 6 months.”_
-    - _“Building in flexibility now adds 10% to development time but ensures we can handle third-party API changes without a full rewrite.”_
-
-## Foundational Impacts
+Predicting change is inherently difficult. High-level trends (e.g., market shifts) are often discussed, but anticipating how those changes cascade into technical decisions—from feature adaptability to data migration strategies—requires both foresight and agility.
 
 Volatility often acts as a headwind for other F6 Foundations, as uncertainty complicates planning, execution, and maintenance. Here’s how it interacts:
 

@@ -7,142 +7,115 @@ weight: 2
 
 _Ensuring technology delivers its intended purpose with excellence._
 
-At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability** represents the foundation of functionality—the workflows, features, and solutions that define the software’s purpose. 
+At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
 
-This foundation emphasizes delivering the right functionality, at the right time, to the right users. It's about carefully considering the purpose of the software and prioritizing it's feature sets. Capability also underscores the importance of intentionality. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
+The Capability foundation emphasizes delivering the right functionality, at the right time, to the right users. It's about carefully considering the purpose of the software and prioritizing it's feature sets. Capability also underscores the importance of intentionality. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
 
-A system that fulfills its purpose with precision and clarity becomes not just functional, but invaluable. 
+## What is Capability?
 
-## Discovery and Analysis
-
-Uncovering capability invovles in-depth discussions where stakeholders describe their needs, and the implementation team translates these into functional and non-functional requirements. 
+**Capability** is captured through in-depth discussions where stakeholders describe their needs, and the implementation team translates these into functional and non-functional requirements. 
 
 **Functional requirements** define the specific behaviors, features, or workflows the system must deliver to meet user and business needs, as distinct from **Non-Functional requirements**, which address performance, scalability, or other operational characteristics.
 
-The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, the F6 Framework enhances it by applying **Capability Mapping** to clearly correlate Business Needs into these requirements.
-
-The mapping exercises described below bring structure and provide a way to reason about what capabilties are required and why.
+The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, the F6 Framework enhances it by applying **Capability Mapping** to clearly correlate requirements into business needs.
 
 {{% callout note %}}
 A detailed guidance on conducting holiistic discovery sessions is covered in [F6 Discovery Process](/docs/f6-discovery/).
 {{% /callout %}}
 
+### Examples of Capability
+
+Capability can be described in several ways. Here are a few high-level examples:
+
+- **Core Workflow Efficiency:** A fintech platform may prioritize seamless transaction flows, such as enabling one-click payment for customers while ensuring real-time fraud checks in the background. This capability streamlines user experience while maintaining robust security.
+
+- **Regulatory Compliance Enablement:** A healthcare application must integrate features that ensure compliance with HIPAA, such as audit trails, secure data sharing, and patient consent management. These capabilities are foundational to operating in a regulated industry.
+
+- **Scalability for Growth:** An e-commerce site designed for a small customer base must be capable of scaling to handle seasonal spikes, like Black Friday traffic, with features such as dynamic resource allocation and robust caching mechanisms.
+
 ## Capability Mapping
 
-Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. This exercise ensures alignment, avoids redundancy, and provides clarity for decision-making.
+Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. 
 
-This process focuses on mapping and alignment. It does not address trade-offs, project planning, or risk evaluation, which are covered in other foundational aspects of the F6 Framework.
+This process focuses on mapping and alignment. It does not directly address trade-offs, project planning, or risk evaluation, which are covered in other aspects of the F6.
 
 The steps are as follows:
 
-1. **Requirements Mapping:** Identify Business Needs and map them to Product Requirements and Technical Requirements. This step ensures a clear understanding of the "what" behind the product.
-2. **Theme Consolidation:** Group the requirements into logical themes to manage complexity and highlight overlaps.
-3. **Implementation Mapping:** Refine the requirements into themes, mapping them to specific implementations techniques, tools and products.
+1. **Business to Product:** TBD.
+2. **Product to Technical:** TBD.
+3. **Implementation:** TBD.
 
-### Requirements Mapping
+### Business to Product
 
-The **Requirements Mapping** exercise begins by identifying high-level **Business Needs**, which represent the core drivers of value for the solution. These are then mapped to **Product Requirements**, which define the features and behaviors the software must exhibit to meet those needs. Finally, these product requirements are translated into actionable **Technical Requirements** that can be implemented by the engineering team.
+Every solution starts with trying to understand its purpose and the problems it aims to solve. For illustration, we will use a **FinTech payment processing system** as an example to show how business goals translate into technical execution.
 
-For the purposes of concrete illustration, we will use a FinTech payment processing system as an example to show how business goals translate into technical execution.
+We start by identifying **business needs**—the core drivers of value for the organization and its users. Imagine the stakeholders gathered in a strategy meeting, discussing their goals for the new platform. Their conversations might sound like this:
 
-| **Business Need**           | **Product Requirements**                                                                 | **Technical Requirements**                                                                 |
-|------------------------------|-----------------------------------------------------------------------------------------|------------------------------------------------------------------------------------------|
-| Fraud Prevention and Detection | Fraud monitoring, Transaction risk scoring, Alerts and notifications, Chargeback management | Anomaly detection algorithms, Real-time data pipelines, Rule-based systems, Transaction logging and analysis |
-| Regulatory Compliance        | Compliance Requirements, AML/KYC verification, Audit trails, Transaction reporting, Data retention policies       | Compliance frameworks (e.g., PCI-DSS), Identity verification systems, Logging and monitoring, Data archival systems |
-| Scalability                  | High-volume transaction processing, Multi-region support, Dynamic resource allocation     | Load balancing, Horizontal scaling, Distributed databases, Cloud-based architecture       |
-| Customer Retention           | Seamless checkout experience, Personalized recommendations, Multi-payment options         | User state management, Recommendation engines, Payment gateway integration, Mobile SDKs |
-| Revenue Optimization         | Transaction retry mechanisms, Smart routing to payment processors, Revenue leakage reports | Payment processor routing algorithms, Failure-handling mechanisms, Data aggregation and reporting tools |
-| Cost Efficiency              | Optimized processing fees, Batch processing for settlements, Infrastructure cost monitoring | Cost modeling systems, Batch processing frameworks, Cloud cost optimization tools        |
-| Data Security and Privacy    | Encryption of sensitive data, Tokenization of payment information, Consent management     | End-to-end encryption, Tokenization services, Data masking techniques, Access control systems |
-| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         | Event-driven architectures, Low-latency message queues, Real-time processing frameworks |
-| Interoperability             | Integration with financial institutions, Open API ecosystem, Cross-border payment capabilities | API management platforms, Protocol translation layers, Message format standardization    |
+- _"We need to proactively detect and prevent fraudulent transactions to protect our customers and our reputation."_
+- _"Compliance with financial regulations like AML and KYC is non-negotiable."_
+- _"Our platform must handle thousands of transactions per second and support customers across multiple regions."_
+- _"Customers expect a seamless checkout experience, whether they’re on desktop or mobile."_
+- _"We want to reduce revenue loss by optimizing transaction retries and routing payments efficiently."_
+- _"Cost efficiency is key; we need to monitor and optimize our processing fees."_
+- _"Data security is paramount; sensitive payment information must be protected at all costs."_
+- _"Instant payment confirmations and real-time updates are table stakes in today’s competitive landscape."_
+- _"We need our system to integrate seamlessly with financial institutions worldwide."_
 
-This table provides a means to understand the connection between business needs, product behavioral requirements and technical implementation requirements. 
+We can distill these statements down, and then map them into specific **Product Requirements**—the user-facing features and workflows required to fulfill those needs. These requirements provide a blueprint for what the platform must deliver to achieve its goals.
+
+| **Business Need**           | **Product Requirements**                                                                 |
+|------------------------------|-----------------------------------------------------------------------------------------|
+| Payment Processing           | Payment gateway integrations |
+| Regulatory Compliance        | AML/KYC verification, Audit trails, Transaction reporting, Data retention policies       |
+| Scalability                  | High-volume transaction processing, Multi-region support, Dynamic resource allocation     |
+| Customer Retention           | Seamless checkout experience, Personalized recommendations, Multi-payment options         |
+| Revenue Optimization         | Transaction retries, Smart routing, Revenue leakage reports, Audit trails, Transaction reporting |
+| Cost Efficiency              | Optimized processing fees, Batch processing for settlements, Infrastructure cost monitoring |
+| Data Security and Privacy    | Encryption of sensitive data, Tokenization of payment information, Consent management     |
+| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
+| Interoperability             | Integration with financial institutions, Open API ecosystem, Cross-border payment capabilities |
 
 For example, "Fraud Prevention and Detection" translates into a set of tools and techniques that proactively identify and mitigate risks. The emphasis here is on capturing the "what" without diving into specific tools or solutions.
 
-### Theme Consolidation
+It’s common for product requirements to overlap so we can refine them down into **Product Themes**—groups of related features or workflows that represent a cohesive area of functionality. 
 
-Once the requirements are defined, the next step is to group both Product Requirements and Technical Requirements into logical themes. This serves two purposes: simplifying the complexity of the requirements and creating alignment between what the business wants to achieve and how it will be implemented.
+| Product Theme        | Product Requirements                                              |
+|----------------------|-------------------------------------------------------------------|
+| Multiple Payment gateway | Payment gateway integrations, Smart routing |
+| Fraud Detection      | Fraud monitoring, Transaction risk scoring, Alerts and notifications |
+| Advanced User Experience      | Seamless checkout interface, Multi-payment options, Instant payment confirmations |
+| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
+| Real-Time Processing         | Instant payment confirmations, Real-time transaction updates, Push notifications         |
+| Scalability          | High-volume transaction processing, Multi-region support, Dynamic resource allocation |
+| Compliance           | AML/KYC verification, Audit trails, Transaction reporting        |
+| Cost Optimization    | Transaction retry mechanisms, Smart routing, Optimized processing |
 
-By consolidating themes at both the product and technical levels, we can identify possible patterns or overlaps between business needs, effectively de-duping requirements. 
 
-#### Product Themes
+### Product to Technical
 
-Product Themes group related requirements that reflect the user-facing aspects of the system, such as workflows, user experience, or compliance needs. These themes provide visibility to stakeholders by showing how their priorities translate into product features.
+Once product requirements are established, the next step is translating them into Technical Requirements. This step ensures captures that each product feature or workflow is backed by a defined set of technical specifications that can be implemented by engineers.
 
-| **Product Theme**          | **Requirements**                                                                         |
-|-----------------------------|-----------------------------------------------------------------------------------------|
-| User Experience            | Seamless checkout experience, Multi-payment options                                     |
-| Risk Management            | Fraud monitoring, Alerts and notifications                                              |
-| Regulatory Compliance      | Compliance requirements, AML/KYC verification                                           |
-| Performance Optimization   | Transaction retry mechanisms, Smart routing to payment processors                       |
-| Personalization            | Personalized recommendations, Customer loyalty programs                                 |
+The process begins by organizing Product Requirements into Product Themes—groups of related features or workflows that represent a cohesive area of functionality. Product Themes allow for better prioritization and help identify synergies or overlaps among requirements.
 
-```markmap
-- Product Themes
-  - User Experience
-    - Seamless checkout experience
-    - Multi-payment options
-  - Risk Management
-    - Fraud monitoring
-    - Alerts and notifications
-  - Regulatory Compliance
-    - Compliance requirements
-    - AML/KYC verification
-  - Performance Optimization
-    - Transaction retry mechanisms
-    - Smart routing to payment processors
-  - Personalization
-    - Personalized recommendations
-    - Customer loyalty programs
-```
+| **Product Theme**           | **Product Requirements**                                                          |
+|------------------------------|-----------------------------------------------------------------------------------------|
+|  |  |
+|  |  |
+|  |  |
 
-#### Technical Themes
+ChatGPT: Write a narrative, then take those Product themes and map into Technical Requirements.
 
-Technical Themes group the underlying technical implementations needed to fulfill the product requirements. These themes allow implementation teams to streamline development efforts and focus on reusable solutions.
+| **Product Theme**           | **Technical Requirements**                                                          |
+|------------------------------|-----------------------------------------------------------------------------------------|
+|  |  |
+|  |  |
+|  |  |
 
-| **Technical Theme**        | **Requirements**                                                                         |
-|-----------------------------|-----------------------------------------------------------------------------------------|
-| Scalability                | Load balancing, Horizontal scaling                                                      |
-| Fraud Detection            | Anomaly detection algorithms, Real-time data pipelines                                  |
-| Data Security              | End-to-end encryption, Tokenization services                                            |
-| Privacy                    | Data masking techniques, Consent management                                             |
-| Real-Time Processing       | Event-driven architectures, Low-latency message queues                                  |
-| Audit and Compliance       | Identity verification systems, Logging and monitoring                                   |
-| Cloud-Native Architecture  | Distributed databases, Cloud-based architecture                                         |
+### Technical to Implementation
 
-```markmap
-- Technical Themes
-  - Scalability
-    - Load balancing
-    - Horizontal scaling
-    - Distributed systems
-  - Fraud Detection
-    - Anomaly detection algorithms
-    - Real-time data pipelines
-  - Data Security
-    - End-to-end encryption
-    - Tokenization services
-  - Real-Time Processing
-    - Event-driven architectures
-    - Low-latency message queues
-  - Audit and Compliance
-    - Identity verification systems
-    - Logging and monitoring
-```
-
-The focus is on flexibility. Themes provide structure but do not impose rigid boundaries, making them adaptable to various contexts.
-
-### Implementation Mapping
-
-The final step is Implementation Mapping, where we unify the previously consolidated product and technical themes into actionable, detailed requirements. These unified requirements represent the distilled essence of what the system needs to achieve and provide a bridge between high-level business needs and practical engineering efforts.
-
-By refining these requirements into implementation strategies and mapping them to possible tools and products, we ensure stakeholders and implementation teams have a shared understanding of the system’s deliverables. This process eliminates duplication, reduces ambiguity, and aligns technical efforts with strategic goals.
-
-| **Requirement**                                  | **Implementation**                        | **Tools & Products**                                                        |
-|--------------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
-| Fraud monitoring                                 | Real-time fraud detection system          | AWS Fraud Detector, Snowflake, Splunk                                      |
+| **Technical Requirement**                      | **Implementation**                        | **Tools & Products**                                                        |
+|------------------------------------------------|-------------------------------------------|-----------------------------------------------------------------------------|
+| Fraud monitoring                                | Real-time fraud detection system          | AWS Fraud Detector, Snowflake, Splunk                                      |
 | Alerts and notifications                        | Event-driven notification system          | AWS SNS, Twilio, Firebase                                                  |
 | Compliance with AML/KYC regulations             | Identity verification platform            | Okta, Auth0, Jumio                                                         |
 | Seamless checkout experience                    | Responsive checkout interface             | React, Vue, Flutter                                                        |
@@ -158,10 +131,11 @@ By refining these requirements into implementation strategies and mapping them t
 | Logging and monitoring                          | Centralized logging and monitoring stack  | Splunk, Elastic Stack, AWS CloudWatch                                      |
 | Long-term data retention                        | Archival storage system                   | AWS S3 Glacier, Google Cloud Storage, Azure Blob Storage                   |
 
+## Trade-Offs
 
-For instance, the theme of "Scalability" translates into implementations like load balancing and distributed systems. These implementations can be achieved using tools such as Kubernetes, Redis, or AWS Elastic Load Balancing. Providing a range of tools ensures teams can choose solutions that align with their specific needs and constraints.
+### Prioritization
 
-This mapping is not about prescribing a single "right" tool but about offering a menu of options. Teams should evaluate these options based on factors such as cost, scalability, and integration with existing syste
+## Impact
 
 ## Why Mapping Matters
 
