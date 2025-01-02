@@ -9,9 +9,15 @@ _Ensuring technology delivers its intended purpose with excellence._
 
 At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
 
-The Capability foundation is about carefully considering the purpose of the software and underscores the importance of intentionality. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
+The **Capability** foundation is about carefully considering the purpose of the software and underscores the importance of intentionality through **Capability Mapping**. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
 
-It also provides a powerful means for business stakeholders to understand how their needs cascade down to impact product features and technical implementation.
+It provides a powerful means for business stakeholders to understand how their needs cascade down to impact product features and technical implementation.
+
+### Out-of-Scope
+
+The **Capability** foundation focuses on defining and delivering functionalities aligned with business and user needs. It does not cover broader considerations such as resource allocation, prioritization, or timelines. These aspects—like defining MVPs, planning releases, or allocating budgets—are addressed in the [**Investment**](/docs/foundations/investment) foundation and the [**F6 Discovery Process**](/docs/f6-discovery/).
+
+Similarly, this foundation does not provide a comprehensive review of technical implementation strategies or architectural designs. While the Implementation Mapping section offers examples to illustrate the concept of base foundations, detailed architectural exploration is left to technical teams and leaders, supported by established methodologies.
 
 ## What is Capability?
 
@@ -21,13 +27,11 @@ It also provides a powerful means for business stakeholders to understand how th
 
 The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, the F6 Framework enhances it by applying **Capability Mapping** to clearly correlate requirements into business needs.
 
-{{% callout note %}}
-A detailed guidance on conducting holiistic discovery sessions is covered in [F6 Discovery Process](/docs/f6-discovery/).
-{{% /callout %}}
-
 ### Examples of Capability
 
-Capability can be described in several ways. Here are a few high-level examples:
+In an ideal world, capabilities would always align directly with specific business needs, delivering exactly what stakeholders and users require. However, the reality is often more complex. Some capabilities exist to directly serve business goals, while others function to enable or support those higher-level capabilities.
+
+Here are some examples: 
 
 - **Core Workflow Efficiency:** A fintech platform may prioritize seamless transaction flows, such as enabling one-click payment for customers while ensuring real-time fraud checks in the background. This capability streamlines user experience while maintaining robust security.
 
@@ -35,13 +39,19 @@ Capability can be described in several ways. Here are a few high-level examples:
 
 - **Scalability for Growth:** An e-commerce site designed for a small customer base must be capable of scaling to handle seasonal spikes, like Black Friday traffic, with features such as dynamic resource allocation and robust caching mechanisms.
 
-### Everything is Capability
+It’s perfectly acceptable—and even expected—for certain capabilities to be technical in nature. Doing so will highlight the elevated importance of those capablities.
 
-As you'll see... TBD
+## Foundational Impacts
 
-## Priorities
+Highly technical teams often introduce technical capabilities such as those related to [**Dependency**](/docs/foundations/dependency), [**Resiliency**](/docs/foundations/resiliency), or [**Security**](/docs/foundations/security). These aren’t always explicitly tied to business needs, but they’re no less critical. The [**F6 Discovery Process**](/docs/f6-discovery/) identifies these areas as distinct foundations, ensuring that technical considerations are properly addressed and cross-checked within the solution’s requirements.
 
-MVP, Roadmap
+| **Foundation**               | **Impact of Capability**                                                                        |
+|------------------------------|-------------------------------------------------------------------------------------------------|
+| Volatility                   | Business needs are constantly evolving and is usually the primary driver of change. |
+| Dependency                   | Capabilities guide the underlying systems interdependencies, which must be built and maintained. |
+| Security                     | Certain capabilities may address critical security needs directly, such as encryption or compliance mechanisms. |
+| Resilience                   | Supporting capabilities often underpin system stability, ensuring reliability and performance under stress. |
+| Investment                   | The complexity and scope of capabilities, especially technical ones, can drive resource allocation and influence cost structures. |
 
 ## Capability Mapping
 
@@ -51,9 +61,9 @@ This process focuses on mapping and alignment. It does not directly address trad
 
 The steps are as follows:
 
-1. **Business to Product:** TBD.
-2. **Product to Technical:** TBD.
-3. **Implementation:** TBD.
+1. **Business to Product Requirements:** Translate high-level business needs into product requirements.
+2. **Product to Technical Requirements:** Define the technical requirements needed to achieve the product's functionality.
+3. **Implementation:** Develop the systems using architectures, tools, and techniques aligned with the technical requirements.
 
 ### Business to Product Requirements
 
@@ -99,7 +109,7 @@ Notice how much detail emerges from just two statements. For example, stakeholde
 The product team has filled in the gaps, revealing needs that might not have been obvious initially. It also underscores how business needs cascade and expand with each conversation. 
 
 {{% callout note %}}
-As a stakeholder, it’s crucial to pay close attention to how your statements are being interpreted. At the same time, sharing detailed insights about the system’s long-term vision is equally important, as it equips the team to plan for the system’s evolution and more effectively achieve future goals. This concept is explored further in the **Volatility** foundation.
+As a stakeholder, it’s crucial to pay close attention to how your statements are being interpreted. At the same time, sharing detailed insights about the system’s long-term vision is equally important, as it equips the team to plan for the system’s evolution and more effectively achieve future goals. This concept is explored further in the [**Volatility**](/docs/foundations/volatility) foundation.
 {{% /callout %}}
 
 ### Product to Technical Requirements
@@ -123,10 +133,10 @@ Much like how the product team "fills in the gaps" for stakeholders, technical t
     - How to deliver notifications across multiple channels (e.g., email, SMS, app alerts).
     - How to ensure notifications are reliable and scalable.
 
-Notice how in addition to the obvious functional requirements, they consider factors like performance, scalability, and security—critical elements that stakeholders might not explicitly articulate. Without guidance, technical teams will draw their own conclusions about how to address key aspects like **Resiliency** (performance and reliability), **Dependency** (dependencies and compatibility), or **Security** (data protection and compliance).
+Notice how in addition to the obvious functional requirements, they consider factors like performance, scalability, and security—critical elements that stakeholders might not explicitly articulate. Without guidance, technical teams will draw their own conclusions about how to address key aspects like [**Resiliency**](/docs/foundations/resiliency) (performance and reliability), [**Dependency**](/docs/foundations/dependency) (dependencies and compatibility), or [**Security**](/docs/foundations/security) (data protection and compliance).
 
 {{% callout note %}}
-The F6 Framework offers stakeholders a chance to influcence the design of Capabilities at key low-level requirements through aspects such as **Resiliency**, **Dependency**, and **Security**—areas that might otherwise be overlooked.
+The F6 Framework offers stakeholders a chance to influcence the design of Capabilities at key low-level requirements through aspects such as [**Resiliency**](/docs/foundations/resiliency), [**Dependency**](/docs/foundations/dependency), and [**Security**](/docs/foundations/security)—areas that might otherwise be overlooked.
 {{% /callout %}}
 
 The outcome is a set of Technical Requirements that provide a high-level blueprint for the system. 

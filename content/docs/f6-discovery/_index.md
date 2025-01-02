@@ -7,7 +7,10 @@ sidebar:
 
 The F6 Discovery Process.
 
+
 ## Todo
+
+- Constraints
 
 - **Event Storming:** A collaborative workshop technique for mapping out system events, workflows, and domain boundaries, enabling teams to visualize where changes are likely to occur.
 - **Story Mapping:** A visual method to break down user journeys and feature sets, focusing on user needs and identifying areas of uncertainty or variability.

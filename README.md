@@ -4,3 +4,8 @@ The F6 Framework provides a structured, holistic approach to building software w
 
 - Product Comparision
 - Trade-off Analysis
+
+## Investment
+
+- Tech Debt
+- Documentation
