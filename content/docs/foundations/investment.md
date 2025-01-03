@@ -5,7 +5,7 @@ weight: 6
 
 ## Overview
 
-_Aligning time, money, and resources to deliver value with intent._
+_Aligning time, money, and resources to deliver valuable solutions._
 
 Every software project operates within constraints. Time, money and scope must all be carefully managed to achieve success. **Investment** is the foundation that brings these realities into focus, ensuring teams align their ambitions with the resources available.
 

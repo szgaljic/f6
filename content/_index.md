@@ -17,7 +17,7 @@ sections:
       items:
         - name: Capability
           icon: puzzle-piece
-          description: Ensuring technology delivers its intended purpose with excellence.      
+          description: Ensuring technology delivers its intended purpose with intentionality.      
         - name: Volatility 
           icon: bolt
           description: Navigating the contours of change with curiosity and precision.
@@ -32,7 +32,7 @@ sections:
           description: Building solutions that endure, adapt, and perform as expected.
         - name: Investment
           icon: chart-pie
-          description: Aligning time, money, and resources to deliver value with intent.
+          description: Aligning time, money, and resources to deliver valuable solutions.
   - block: cta-card
     content:
       title: "Bring clarity to technology solutions."
