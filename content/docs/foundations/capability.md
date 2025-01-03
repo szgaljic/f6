@@ -210,7 +210,7 @@ To understand the mapping chain in action, let’s examine one technical require
     - **Implementation (GCP/Containers):** Pub/Sub is used to process streaming data, with Kubernetes scaling services as needed.
     - **Implementation (AWS/Serverless):** EventBridge orchestrates event-driven workflows, triggering Lambda functions to process data in real time.
 
-## Why does this matter?
+## Why This Matters
 
 At the forefront of a solution are the visible business capabilities that directly deliver value for stakeholders. Supporting these are the enabling capabilities: the refined inner workflows often related to [**Dependency**](/docs/foundations/dependency), [**Resiliency**](/docs/foundations/resiliency), and [**Security**](/docs/foundations/security) that make those business capabilities possible. Beneath it all lies the foundational layer—[**the base foundation**](/docs/foundations/capability/#the-base-foundation) underpinning the entire solution.
 

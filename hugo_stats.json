@@ -385,6 +385,7 @@
       "alerts-and-notifications",
       "anticipating-change",
       "architecture",
+      "balanced-collaboration",
       "build-vs-buy-crm-example",
       "business-needs",
       "business-needs-to-product-requirements",
@@ -410,6 +411,7 @@
       "getting-started",
       "gradient-of-complexity",
       "hide-button",
+      "horizon-thinking",
       "impact",
       "implementation",
       "implementation-mapping",
@@ -425,6 +427,7 @@
       "nav-toggle",
       "next-steps",
       "out-of-scope",
+      "overengineered-solutions",
       "overlaps-with-other-f6-foundations",
       "overview",
       "page-bg",
@@ -455,12 +458,14 @@
       "top",
       "trade-offs",
       "understanding-the-base-foundation",
+      "unexpected-refactoring",
       "what-is-capability",
       "what-is-volatility",
       "where-it-gets-complicated",
       "why-does-this-matter",
       "why-i-created-the-framework",
       "why-mapping-matters",
+      "why-this-matters",
       "workflow-change-and-database-access-patterns"
     ]
   }

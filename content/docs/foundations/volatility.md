@@ -138,3 +138,54 @@ Consider, a logistics company initially using DynamoDB, an extremely fast yet ri
 - **Option 3 - Hybrid Approach:** A hybrid model involves using shared databases for smaller tenants while dedicating separate databases to high-value or demanding clients. This balances cost and scalability but adds complexity to architecture and operational management.
 
 Could the team have anticipated this shift in workflow when initially selecting the database? Was the focus on immediate cost-efficiency short-sighted, or was it the right choice based on the information available at the time? Did business stakeholders clearly communicate the potential for evolving analytics needs, or did the technology team miss early indicators of future requirements? 
+
+## Horizon Thinking
+
+In technology solutions, the tension between short-term and long-term thinking plays out daily. Most projects begin with the push to achieve a Minimum Viable Product (MVP)—the fastest way to get to market, win customers, and learn what the market has to say about the offering. While this approach is essential for agility, it often exposes a critical communication gap between stakeholders and implementation teams.
+
+This gap leads to three common scenarios, each with unique challenges and lessons. 
+
+{{% callout note %}}
+Each of these scenarios underscores the importance of clear, ongoing communication and collaboration between stakeholders and implementation teams. The key takeway—whether you pay the cost upfront or later, **the goal is to avoid surprises**. Success comes from aligning on a shared vision, understanding trade-offs, and making intentional decisions together.
+{{% /callout %}}
+
+### Unexpected Refactoring
+
+A stakeholder requests a small MVP with the understanding that it can grow incrementally over time. They envision each new feature adding small impacts, seamlessly building on the initial product. But then, out of nowhere—the technical team announces that the architecture can no longer handle the additional features. Everything needs to be refactored, causing delays and skyrocketing costs.
+
+<h4>Why It Happens:</h4>
+
+Systems are built with assumptions in mind. If those assumptions—often based on incomplete or omitted information—prove incorrect, the entire architecture may need to change. Sometimes stakeholders omit critical details to save time or reduce costs, believing these details won’t matter yet. Other times, they simply don’t realize the relevance of those details.
+
+<h4>How to Avoid It:</h4>
+
+Stakeholders must communicate clearly and proactively about what they believe to be true and stable until specific milestones, such as the next six months, onboarding a major customer, or securing funding. They must also critically assess what features or capabilities they will—and will not—get within those milestones to avoid surprises down the road.
+
+### Overengineered Solutions
+
+A stakeholder provides vague or minimal details, perhaps due to time constraints, a lack of experience with technology solutions, or insufficient involvement and curiosity. Eager to anticipate future needs, the implementation team creates an elaborate, overly complex solution for a problem that doesn’t yet exist—or may never exist. Time and money are wasted, and the stakeholder grows frustrated as deadlines slip and no tangible product emerges.
+
+<h4>Why It Happens:</h4>
+
+Without clear direction, implementation teams may overcompensate by planning for hypothetical scenarios. While well-intentioned, these efforts often solve problems that are far in the future or unlikely to occur, diverting resources from immediate priorities.
+
+<h4>How to Avoid It:</h4>
+
+Stakeholders must communicate a clear vision of what is needed at each milestone, while also offering insights into long-term business goals. Collaboration is key: when technical teams explain the foundational groundwork required for future features, stakeholders must weigh the cost of doing it now versus incurring larger costs through future refactoring. Experienced stakeholders understand that delaying groundwork to validate the product is often a strategic choice, while inexperienced ones may be caught off guard when future costs arise.
+
+### Balanced Collaboration
+
+In the ideal case, stakeholders and implementation teams achieve alignment through shared curiosity, collaboration, and mutual understanding. The stakeholder is actively involved, learning enough about the technology to make informed decisions. The implementation team is equally engaged, learning enough about the business to understand its drivers and priorities. Together, they strike a balance between delivering an MVP and laying the groundwork for future needs.
+
+<h4>Why It Works:</h4>
+
+This approach is grounded in trust and transparency. Stakeholders and implementation teams recognize the shared goal of delivering a valuable product while managing risk and cost. By staying engaged and maintaining open communication, they avoid the pitfalls of both underplanning and overengineering.
+
+- **Stakeholders** should remain curious and involved, asking questions to understand technical decisions and how they align with business goals.
+- **Implementation teams** should prioritize understanding the “why” behind business drivers, ensuring their solutions align with the broader vision.
+
+## Why This Matters
+
+The key question of volatility is: “What might shift, and how do we adapt?” While predicting the future is impossible, asking “what-if” helps uncover potential changes and align expectations. By exploring these possibilities, teams can strategically focus effort on areas most likely to evolve.
+
+Success in navigating volatility requires shared horizon thinking, where stakeholders and implementation teams work collaboratively to anticipate, communicate, and address potential shifts. This alignment ensures that resources are applied thoughtfully, enabling systems to adapt and thrive in an ever-changing landscape.
