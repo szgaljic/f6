@@ -36,7 +36,7 @@ sections:
   - block: cta-card
     content:
       title: "Bring clarity to technology solutions."
-      text: The F6 Framework empowers business leaders to navigate the complexity of building technology with purpose. This holistic approach to development helps align business goals with technical decisions for sustainable success.
+      text: <b>F6</b> empowers business leaders to navigate the complexity of building technology with purpose. This holistic approach to development helps align business goals with technical decisions for sustainable success.
       button:
         text: Get Started
         url: https://hugoblox.com/templates/details/docs/
