@@ -7,15 +7,15 @@ weight: 1
 
 _Ensuring technology delivers its intended purpose with excellence._
 
-At its core, software exists to solve problems, meet needs, and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
+At its core, software exists to solve problems and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
 
-The **Capability** foundation is about carefully considering the purpose of the software and underscores the importance of intentionality through **Capability Mapping**. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
+The **Capability** foundation is about carefully considering the purpose of the software and underscores the importance of intentionality through **Capability Mapping**. It provides a powerful means for business stakeholders to understand how their needs cascade down to impact product features and technical implementation. Adding unnecessary features or poorly implementing required ones can dilute focus, introduce technical debt, and create frustration for users. 
 
-It provides a powerful means for business stakeholders to understand how their needs cascade down to impact product features and technical implementation.
+Capability also bring attention to [**the base foundation**](/docs/foundations/capability/#the-base-foundation)—the initial setup and architectural blueprint that underpins the entire system. This often invisibile step is critical to implementation that is frequently overlooked. 
 
 ### Out-of-Scope
 
-The **Capability** foundation focuses on defining and delivering functionalities aligned with business and user needs. It does not cover broader considerations such as resource allocation, prioritization, or timelines. These aspects—like defining MVPs, planning releases, or allocating budgets—are addressed in the [**Investment**](/docs/foundations/investment) foundation and the [**F6 Discovery Process**](/docs/f6-discovery/).
+This foundation focuses on defining and delivering functionalities aligned with business and user needs. It does not cover broader considerations such as resource allocation, prioritization, or timelines. These aspects are addressed in the [**Investment**](/docs/foundations/investment) foundation and the [**F6 Discovery Process**](/docs/f6-discovery/).
 
 Similarly, this foundation does not provide a comprehensive review of technical implementation strategies or architectural designs. While the Implementation Mapping section offers examples to illustrate the concept of base foundations, detailed architectural exploration is left to technical teams and leaders, supported by established methodologies.
 
@@ -25,7 +25,7 @@ Similarly, this foundation does not provide a comprehensive review of technical 
 
 **Functional requirements** define the specific behaviors, features, or workflows the system must deliver to meet user and business needs, as distinct from **Non-Functional requirements**, which address performance, scalability, or other operational characteristics.
 
-The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, the F6 Framework enhances it by applying **Capability Mapping** to clearly correlate requirements into business needs.
+The process typically involves capturing the current state, defining the desired future state, and identifying the gaps between the two. These gaps represent the project scope. While this is a standard industry practice, F6 enhances it by applying **Capability Mapping** to clearly correlate requirements into business needs.
 
 ### Examples of Capability
 
@@ -39,25 +39,27 @@ Here are some examples:
 
 - **Scalability for Growth:** An e-commerce site designed for a small customer base must be capable of scaling to handle seasonal spikes, like Black Friday traffic, with features such as dynamic resource allocation and robust caching mechanisms.
 
-It’s perfectly acceptable—and even expected—for certain capabilities to be technical in nature. Doing so will highlight the elevated importance of those capablities.
+It’s perfectly acceptable—and even expected—for certain capabilities to be technical in nature. Doing so will highlight the elevated importance of those capabilities.
 
 ## Foundational Impacts
 
-Highly technical teams often introduce technical capabilities such as those related to [**Dependency**](/docs/foundations/dependency), [**Resiliency**](/docs/foundations/resiliency), or [**Security**](/docs/foundations/security). These aren’t always explicitly tied to business needs, but they’re no less critical. The [**F6 Discovery Process**](/docs/f6-discovery/) identifies these areas as distinct foundations, ensuring that technical considerations are properly addressed and cross-checked within the solution’s requirements.
+Highly technical teams often consider enabling capabilities naturally such as those related to [**Dependency**](/docs/foundations/dependency), [**Resiliency**](/docs/foundations/resiliency), or [**Security**](/docs/foundations/security). For those who may not initially account for these areas, F6 identifies them as distinct foundations, ensuring they are properly addressed and cross-checked within the solution’s requirements.
+
+Capabilities are the main reason why the solution exists and heavily leads all other foundations. Here’s how it interacts:
 
 | **Foundation**               | **Impact of Capability**                                                                        |
 |------------------------------|-------------------------------------------------------------------------------------------------|
 | Volatility                   | Business needs are constantly evolving and is usually the primary driver of change. |
 | Dependency                   | Capabilities guide the underlying systems interdependencies, which must be built and maintained. |
-| Security                     | Certain capabilities may address critical security needs directly, such as encryption or compliance mechanisms. |
+| Security                     | Capabilities either address or require security, such as encryption or compliance mechanisms. |
 | Resilience                   | Supporting capabilities often underpin system stability, ensuring reliability and performance under stress. |
-| Investment                   | The complexity and scope of capabilities, especially technical ones, can drive resource allocation and influence cost structures. |
+| Investment                   | Capabilities can be enhanced or reduced, directly affecting cost, time, and resource trade-offs.  |
 
 ## Capability Mapping
 
-Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating clear mappings between high-level objectives and implementation strategies. 
+Central to the Capability foundation is **Capability Mapping**. It provides a structured approach to align business goals with technical execution by creating mappings between high-level objectives and implementation strategies. 
 
-This process focuses on mapping and alignment. It does not directly address trade-offs, project planning, or risk evaluation, which are covered in other aspects of the F6.
+This process focuses on mapping and alignment, serving as a foundation for making trade-offs, planning projects, and evaluating risks, which are further supported by other aspects of F6.
 
 The steps are as follows:
 
@@ -74,7 +76,7 @@ Imagine a strategy meeting where stakeholders are sharing their vision for the n
 - _"We need to proactively detect and prevent fraudulent transactions to protect our customers and our reputation."_
 - _"Compliance with financial regulations like AML and KYC is non-negotiable."_
 
-On the surface, these seem straightforward. Fraud detection, prevention, and compliance—how hard can it be? But as we dive deeper, these statements unravel into a complex web of needs that the product must address.
+On the surface, these seem straightforward. Fraud detection, prevention, and compliance—how hard can it be? But as we refine these statments, they unravel into a complex web of needs that the product must address:
 
 1. **Fraud Detection:** Identifying potentially fraudulent transactions before they are completed.
 2. **Fraud Prevention:** Blocking or mitigating fraudulent activity in real time.
@@ -83,7 +85,7 @@ On the surface, these seem straightforward. Fraud detection, prevention, and com
 5. **Auditability:** Providing detailed records for compliance audits.
 6. **Customer Verification:** Implementing workflows to verify user identities.
 
-These refined business needs are still abstract but give us a clearer picture of what the platform must achieve. The next step is to translate these into **Product Requirements**—the tangible workflows and features the platform must offer.
+These refined business needs are still abstract but give us a clearer picture of what the platform must achieve. The next step is to translate these into **Product Requirements**—the tangible workflows and features the platform must offer:
 
 | **Business Need(s)**            | **Product Requirement**                | **Description**                                                                       |
 |-------------------------------|----------------------------------------|---------------------------------------------------------------------------------------|
@@ -104,7 +106,7 @@ These refined business needs are still abstract but give us a clearer picture of
 | Customer Verification         | Document Upload and Validation         | Allow customers to upload identification documents for verification.                 |
 | Customer Verification         | Ongoing Verification                   | Re-verify customer identities periodically to ensure continued compliance.           |
 
-Notice how much detail emerges from just two statements. For example, stakeholders didn’t explicitly ask for a **Compliance Dashboard**, but it’s an essential feature to help compliance officers manage and track regulatory requirements effectively. Similarly, **Transaction Blocking** wasn’t mentioned outright, but it’s a critical part of fraud prevention that aligns with the goal of protecting customers and the business.
+Notice how much detail emerges from just two statements! For example, stakeholders didn’t explicitly ask for a **Compliance Dashboard**, but it’s an essential feature to help compliance officers manage and track regulatory requirements effectively. Similarly, **Transaction Blocking** wasn’t mentioned outright, but it’s a critical part of fraud prevention that aligns with the goal of protecting customers and the business.
 
 The product team has filled in the gaps, revealing needs that might not have been obvious initially. It also underscores how business needs cascade and expand with each conversation. 
 
@@ -116,9 +118,9 @@ As a stakeholder, it’s crucial to pay close attention to how your statements a
 
 The conversation now shifts to deriving the **Technical Requirements**—broad characteristics that define what the underlying architecture and system must achieve. 
 
-We'll focus on three specific product requirements: **Real-Time Fraud Monitoring**, **KYC Verification**, and **Alerts and Notifications**. These examples demonstrate how functional and non-functional needs are considered and how the technical team begins to define the architecture's fundamental capabilities.
+We'll focus on three product requirements for illustration: **Real-Time Fraud Monitoring**, **KYC Verification**, and **Alerts and Notifications**. We can show how functional and non-functional needs are considered and how the technical team begins to define the architecture's enabling capabilities.
 
-Much like how the product team "fills in the gaps" for stakeholders, technical teams are "filling in the gaps" for the product team—considering scalability, data flows, processing needs, and other foundational technical factors. 
+Much like how the product team "fills in the gaps" for stakeholders, technical teams are "filling in the gaps" for the product team—considering scalability, data flows, processing needs, and other enabling technical factors. 
 
 - **Real-Time Fraud Monitoring**
     - How to handle large volumes of transactional data in real time.
@@ -136,10 +138,10 @@ Much like how the product team "fills in the gaps" for stakeholders, technical t
 Notice how in addition to the obvious functional requirements, they consider factors like performance, scalability, and security—critical elements that stakeholders might not explicitly articulate. Without guidance, technical teams will draw their own conclusions about how to address key aspects like [**Resiliency**](/docs/foundations/resiliency) (performance and reliability), [**Dependency**](/docs/foundations/dependency) (dependencies and compatibility), or [**Security**](/docs/foundations/security) (data protection and compliance).
 
 {{% callout note %}}
-The F6 Framework offers stakeholders a chance to influcence the design of Capabilities at key low-level requirements through aspects such as [**Resiliency**](/docs/foundations/resiliency), [**Dependency**](/docs/foundations/dependency), and [**Security**](/docs/foundations/security)—areas that might otherwise be overlooked.
+F6 offers stakeholders a chance to influcence the design of Capabilities at key low-level requirements through aspects such as [**Resiliency**](/docs/foundations/resiliency), [**Dependency**](/docs/foundations/dependency), and [**Security**](/docs/foundations/security)—areas that might otherwise be overlooked.
 {{% /callout %}}
 
-The outcome is a set of Technical Requirements that provide a high-level blueprint for the system. 
+The outcome is a set of Technical Requirements that provide a low-level needs list for the system. 
 
 | **Product Requirement**      | **Technical Requirements**                                                    |
 |-------------------------------|-------------------------------------------------------------------------------|
@@ -159,7 +161,7 @@ The outcome is a set of Technical Requirements that provide a high-level bluepri
 | --                            | Dynamic configuration of notification rules                                   |
 | --                            | Monitoring and logging of notification workflows                              |
 
-This stage offers a checkpoint where any misalignments between product and technical teams can be resolved. 
+At this stage, the product and technical teams collaborate to refine the list further into a more cohesive description of the architecture. While this level of detail is outside the primary focus of F6, it’s important to note that another layer of translation takes place here.
 
 ### Implementation
 
@@ -184,7 +186,7 @@ To illustrate how base foundations influence implementation, consider two fictio
 - **Alex**, an expert in GCP/Containers, proposes a foundation based on Google Cloud Platform, Kubernetes, and Java/Spring Boot.
 - **Jessica**, proficient in AWS/Serverless, suggests a foundation leveraging AWS Lambda, DynamoDB, and Node.js.
 
-Select six of the technical requirements from the previous step, two from each product requirement, we can demonstrate mapping them into different base foundations.
+We can demonstrate mapping six technical requirements into different base foundations by selecting two from each product requirement from the previous step.
 
 | **Technical Requirement**            | **GCP/Containers**                                                              | **AWS/Serverless**                                                                 |
 |--------------------------------------|---------------------------------------------------------------------------------|----------------------------------------------------------------------------------|
@@ -199,7 +201,8 @@ Both of these foundations can end up satisfying the technical requirements, yet 
 
 #### Capability Chain
 
-To understand the mapping chain in action, let’s examine one specific example: Real-Time Event Processing Systems.
+
+To understand the mapping chain in action, let’s examine one technical requirement: **Real-Time Event Processing Systems**.
 
 - **Business Need:** Detect and prevent fraudulent transactions.
 - **Product Requirement:** Real-time fraud monitoring.
@@ -207,4 +210,10 @@ To understand the mapping chain in action, let’s examine one specific example:
     - **Implementation (GCP/Containers):** Pub/Sub is used to process streaming data, with Kubernetes scaling services as needed.
     - **Implementation (AWS/Serverless):** EventBridge orchestrates event-driven workflows, triggering Lambda functions to process data in real time.
 
-This example showcases how the entire chain—from high-level business objectives to low-level implementation—is informed by both technical expertise and strategic decision-making.
+## Why does this matter?
+
+At the forefront of a solution are the visible business capabilities that directly deliver value for stakeholders. Supporting these are the enabling capabilities: the refined inner workflows often related to [**Dependency**](/docs/foundations/dependency), [**Resiliency**](/docs/foundations/resiliency), and [**Security**](/docs/foundations/security) that make those business capabilities possible. Beneath it all lies the foundational layer—[**the base foundation**](/docs/foundations/capability/#the-base-foundation) underpinning the entire solution.
+
+The **Capability** foundation asks the main question: “What should the solution do?” It provides a structured approach to answering this question through **Capability Mapping** and offers a means for traceability. 
+
+By explicitly connecting visible business goals to their enabling and foundational layers, it highlights the interconnectedness of the solution—from the high-level objectives down to the unseen but critical underpinnings.

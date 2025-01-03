@@ -66,7 +66,7 @@ Straightforward foundations like **Capability** and **Investment** provide immed
 
 Trade-offs are an inherent part of software development, where every decision involves balancing competing priorities. These decisions occur at both high and low levels, influencing everything from system architecture to individual features. High-level trade-offs, such as choosing a fast/simple design for a feature versus loger-term/complex design, are often visible and easier to grasp. However, low-level trade-offs, like selecting a specific software component, can have cascading impacts that require technical expertise to fully understand.
 
-For **stakeholders and business leaders**, it’s on your to be curious and attentive to these trade-offs. Ask questions, probe for clarity, and seek to understand the implications of decisions being made. Doing so helps uncover potential risks and ensures alignment with broader goals.
+For **stakeholders and business leaders**, it’s on you to be curious and attentive to these trade-offs. Ask questions, probe for clarity, and seek to understand the implications of decisions being made. Doing so helps uncover potential risks and ensures alignment with broader goals.
 
 For **implementation team members**, remember that you are not alone in making these trade-offs. It is your responsibility to translate the technical nuances and potential impacts of these decisions into terms that stakeholders can understand. By bridging this gap, you help improve collaboration and ensure that trade-offs are intentional and aligned with the project’s objectives.
 
