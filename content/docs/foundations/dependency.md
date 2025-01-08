@@ -17,21 +17,40 @@ Ultimately, Dependency challenges teams to think holistically about the ecosyste
 
 ## What is Dependency?
 
-**Dependency** refers to any component, system, or service that a solution relies on to function. The challenge lies in defining what we mean by the "solution." The end product seen by stakeholders and users is the result of a symphony of interconnected components stitched together into a cohesive system. In this context, a dependency is something that is less core to the solution's identity, and is more a composable feature that _enables_ the solution.
+**Dependency** refers to any component, system, or service that a solution relies on to function. The challenge is defining what we mean by the "solution." The end product seen by stakeholders and users is the result of a symphony of interconnected components stitched together into a cohesive system. In this context, a dependency is something that is less core to the solution's identity, and is more a composable feature that _enables_ the solution.
 
 {{% callout note %}}
 A **dependency** is anything that the solution relies upon but is not part of its core identity or directly owned.
 {{% /callout %}}
 
-Understanding dependencies requires framing them within a specific context. By agreeing on the "core identity" of a solution, you can determine what lies outside it and consider those as dependencies.
+Understanding dependencies requires framing them within a specific context. For example, in the context of an e-commerce platform, a custom-built recommendation engine may be part of its core identity, while a third-party payment gateway like Stripe would be considered a dependency. 
+
+By agreeing on the “core identity” of a solution, you can determine what lies outside it and consider those as dependencies.
+
+### Dependency Classification
+
+When classifying something as a _dependency_ it can be helpful to evaluate it along two key axes: **Ownership** and **Depth**.
+
+**Ownership** refers to who controls the dependency and how much influence or authority your team or organization has over it. The axis ranges from:
+
+- **Internal:** Dependencies that are owned, built, or directly managed by your team or organization. These offer more flexibility and control over changes but require ongoing maintenance and expertise.
+- **External:** Dependencies provided by third parties, such as SaaS platforms, open-source libraries, or APIs. These are convenient and reduce the operational burden but limit customization and are subject to external constraints (e.g., vendor priorities, licensing changes).
+
+{{% callout note %}}
+**Internal dependencies** align closely with your team’s goals but require resource investment to build and maintain, whereas **external dependencies** offer speed and efficiency but can introduce risks like vendor lock-in or opaque updates.
+{{% /callout %}}
+
+**Depth** refers to how deeply ingrained the dependency is within your system—essentially, how coupled it is to your workflows, architecture, or business logic. This ranges from:
+
+- **Shallow:** Dependencies that are lightly coupled and relatively easy to replace or remove. These might include standalone tools, integrations, or utility libraries.
+- **Deep:** Dependencies that are tightly integrated into your core workflows, architecture, or decision-making processes. Replacing these can be challenging, costly, and risky.
+Key Considerations for Depth:
+
+{{% callout note %}}
+**Shallow dependencies** are easier to manage and replace but may lack the robustness or specificity required for deeper integration, whereas **deep dependencies** provide essential functionality but require careful planning and risk management to avoid technical debt or future bottlenecks.
+{{% /callout %}}
 
 ### Examples of Dependency
-
-Classifying something as a _dependency_ requires nuance, but it can be helpful to evaluate it along two key axes: **scope** and **level**.
-
-**Scope** refers to ownership—ranging from internal (within your team or organization) to external (outside your organization). Internal dependencies offer more direct control, as they can be modified or updated according to your needs. External dependencies, on the other hand, are owned by third parties, such as SaaS providers. Changes to these external dependencies are typically subject to the priorities of the provider, balancing the needs of all their customers.
-
-**Level** relates to the size or complexity of the dependency. High-level dependencies encompass holistic services, platforms, or distributed workflows. Low-level dependencies, in contrast, are more granular and technical, such as tools, frameworks, or libraries. While this classification isn’t rigid, it provides a useful framework for understanding dependencies.
 
 Every organization is different but the the following diagram illustrates a few possible examples:
 
@@ -39,30 +58,60 @@ Every organization is different but the the following diagram illustrates a few 
 quadrantChart
     title Examples of Dependencies
     x-axis Internal --> External
-    y-axis Low-level --> High-level
-    quadrant-1 Bought
-    quadrant-2 Organization-Wide
-    quadrant-3 Team-Wide
-    quadrant-4 Danger Zone
-    Custom Logging Library               : [0.25, 0.15]
-    Service CI/CD Pipeline               : [0.35, 0.4]
-    "Self-Hosted Search (Elasticsearch)" : [0.75, 0.35]
-    "CRM (Hubspot)"                      : [0.75, 0.7]
-    "Payment Gateway (Stripe)"           : [0.84, 0.85]
-    "Managed DB (MongoDB Atlas)"         : [0.35, 0.8]
-    "Third-Party Node.js Library"        : [0.85, 0.15]
-    "Cloud Hosting (AWS)"                : [0.4, 0.9]
+    y-axis Shallow --> Deep
+    quadrant-1 "Strategic Outsourcing"
+    quadrant-2 "Core Identity"
+    quadrant-3 "Internal Enablers"
+    quadrant-4 "External Plug-and-Play"
+    
+    "Fraud Detection Engine"           : [0.3, 0.9]
+    "Customer Data Warehouse"          : [0.3, 0.6]
+    "UI Framework (React)"             : [0.2, 0.75]
+
+    "Risk Scoring Model"               : [0.45, 0.4]
+    "Transaction Monitoring Dashboard" : [0.35, 0.2]
+    "Custom CSV Parser"                : [0.15, 0.1]    
+    
+    "Cloud Hosting (AWS)"              : [0.6, 0.9]
+    "Payment Gateway (Stripe)"         : [0.84, 0.8]
+    "CRM (HubSpot)"                    : [0.85, 0.6]
+
+    "Currency Conversion API"         : [0.8, 0.4]
+    "Geolocation Library"             : [0.8, 0.2]
+    "Email Service (SendGrid)"        : [0.65, 0.3]
 ```
 
-This is not an exhaustive list, but it offers some insight into the considerations involved in understanding dependencies:
+**Core Identity (Internal + Deep)**
 
-- **Team-Wide:** Low-level internal dependencies in this category typically include smaller, focused elements like libraries, frameworks, tools, or individual components and services. These are often straightforward to understand and manage within a single team’s scope.
+These dependencies are deeply tied to the organization’s strategic goals and workflows, making them integral to the solution's "core identity."
 
-- **Organization-Wide:** High-level dependencies here refer to larger, more complex workflows or systems—such as service-oriented architectures (SOA) or distributed services. While still internal to the organization, these dependencies span multiple teams and require coordination and governance to maintain control.
+- **Fraud Detection Engine:** A proprietary system that uses machine learning to analyze transactions and detect fraudulent behavior. Built in-house to maintain competitive advantage and tightly integrated into the payment flow.
+- **Custom Analytics Platform:** An in-house developed solution for all customer and transaction data. This system is critical for long-term analytics, reporting, and compliance.
+- **UI Framework (React):** A front-end framework selected for building all customer-facing applications, the entire front-end ecosystem relies on it, making it difficult to replace.
 
-- **Outsourced:** High-level external dependencies encompass managed solutions, third-party products, or SaaS platforms. These are owned and operated outside the organization, making them harder to influence or control directly while offering scalability and reduced operational burden.
+**Internal Enablers (Internal + Shallow)**
 
-- **Danger Zone:** External low-level dependencies are often unavoidable but can be risky. These include third-party libraries or tools that are small in scope but can introduce vulnerabilities, maintenance challenges, or disruptions if not carefully managed. Awareness and mitigation are crucial here.
+These are lightweight, internally built tools or utilities designed to support workflows without being deeply ingrained in the architecture.
+
+- **Risk Scoring Model:** Interchangeable machine learning models for scoring transactions by risk level. Designed to enable rapid iteration and experimentation without tightly coupling them to the fraud detection engine.
+- **Transaction Monitoring Dashboard:** A lightweight internal tool for customer support and operations teams to track payment statuses in real-time.
+- **Custom CSV Parser:** A lightweight, in-house utility designed to parse and process CSV files for internal batch data imports or exports. It’s simple, easily replaceable, and tailored to the organization’s specific formats and workflows, but not deeply integrated into the core system.
+
+**Strategic Outsourcing (External + Deep)**
+
+These dependencies provide essential functionality but are managed externally, requiring trust in third parties for critical operations.
+
+- **Cloud Hosting (AWS):** A cloud provider hosting the entire application infrastructure, providing scalability, reliability, and availability. Deeply integrated with deployment and operational workflows.
+- **Payment Gateway (Stripe):** A third-party service to handle payment processing, ensuring PCI compliance and managing global transaction flows.
+- **CRM (HubSpot):** A third-party customer relationship management platform used for managing merchant relationships, customer communications, and sales pipelines. Deeply integrated into marketing, support, and operational workflows, making it critical but externally managed.
+
+**External Plug-and-Play (External + Shallow)**
+
+These are modular, external solutions that are easy to integrate, replace, or remove.
+
+- **Currency Conversion API:** An external API for real-time currency exchange rates, used in international transactions.
+- **Email Service (SendGrid):** A third-party service for sending payment confirmation emails to customers, reducing the need to manage email servers internally.
+- **Geolocation Library:** A third-party library that identifies user locations based on their IP addresses. Used for fraud detection or tailoring user experiences.
 
 ### Key Decision Points
 

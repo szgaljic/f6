@@ -2,7 +2,7 @@ The F6 Framework provides a structured, holistic approach to building software w
 
 ## Foundations 
 
-- Present the "Knobs" that can be turned more clearly.
+- Present the "Levers" that can be pulled more clearly.
 - 
 
 ### Investment

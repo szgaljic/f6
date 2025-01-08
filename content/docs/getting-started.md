@@ -9,7 +9,7 @@ sidebar:
 
 The **F6 Framework** provides a structured lens to evaluate and plan technology projects, acting as a communication bridge between business leaders and implementation teams. Its primary audience includes:
 
-- **Stakeholders (C-Suite, business leaders):** Helping them understand the strategic "knobs" they can turn in their projects and the impacts of their decisions.
+- **Stakeholders (C-Suite, business leaders):** Helping them understand the strategic "levers" they can pull in their projects and the impacts of their decisions.
 - **Implementation teams (Analysts, Project Managers, Engineers, etc):** Offering a shared language to translate technical considerations into business-relevant terms.
 
 F6 does not replace methodologies like Agile, Scrum, or Lean. Instead, it layers onto these processes, enhancing them by addressing key trade-offs across six foundational aspects:
