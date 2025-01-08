@@ -33,8 +33,8 @@ When classifying something as a _dependency_ it can be helpful to evaluate it al
 
 **Ownership** refers to who controls the dependency and how much influence or authority your team or organization has over it. The axis ranges from:
 
-- **Internal:** Dependencies that are owned, built, or directly managed by your team or organization. These offer more flexibility and control over changes but require ongoing maintenance and expertise.
-- **External:** Dependencies provided by third parties, such as SaaS platforms, open-source libraries, or APIs. These are convenient and reduce the operational burden but limit customization and are subject to external constraints (e.g., vendor priorities, licensing changes).
+- **Internal Ownership:** Dependencies that are owned, built, or directly managed by your team or organization. These offer more flexibility and control over changes but require ongoing maintenance and expertise.
+- **External Ownership:** Dependencies provided by third parties, such as SaaS platforms, open-source libraries, or APIs. These are convenient and reduce the operational burden but limit customization and are subject to external constraints (e.g., vendor priorities, licensing changes).
 
 {{% callout note %}}
 **Internal dependencies** align closely with your team’s goals but require resource investment to build and maintain, whereas **external dependencies** offer speed and efficiency but can introduce risks like vendor lock-in or opaque updates.
@@ -42,8 +42,8 @@ When classifying something as a _dependency_ it can be helpful to evaluate it al
 
 **Depth** refers to how deeply ingrained the dependency is within your system—essentially, how coupled it is to your workflows, architecture, or business logic. This ranges from:
 
-- **Shallow:** Dependencies that are lightly coupled and relatively easy to replace or remove. These might include standalone tools, integrations, or utility libraries.
-- **Deep:** Dependencies that are tightly integrated into your core workflows, architecture, or decision-making processes. Replacing these can be challenging, costly, and risky.
+- **Shallow Depth:** Dependencies that are lightly coupled and relatively easy to replace or remove. These might include standalone tools, integrations, or utility libraries.
+- **Deep Depth:** Dependencies that are tightly integrated into your core workflows, architecture, or decision-making processes. Replacing these can be challenging, costly, and risky.
 Key Considerations for Depth:
 
 {{% callout note %}}
@@ -57,8 +57,8 @@ Every organization is different but the the following diagram illustrates a few 
 ```mermaid
 quadrantChart
     title Examples of Dependencies
-    x-axis Internal --> External
-    y-axis Shallow --> Deep
+    x-axis Internal Ownership --> External Ownership
+    y-axis Shallow Depth --> Deep Depth
     quadrant-1 "Strategic Outsourcing"
     quadrant-2 "Core Adoption"
     quadrant-3 "Internal Enablers"
@@ -66,9 +66,9 @@ quadrantChart
     
     "Fraud Detection Engine"           : [0.3, 0.9]
     "Customer Data Warehouse"          : [0.3, 0.6]
-    "UI Framework (React)"             : [0.2, 0.75]
+    "UI Framework (React)"             : [0.2, 0.8]
 
-    "Risk Scoring Model"               : [0.45, 0.4]
+    "Risk Scoring Model"               : [0.4, 0.35]
     "Transaction Monitoring Dashboard" : [0.35, 0.2]
     "Custom CSV Parser"                : [0.15, 0.1]    
     
@@ -76,12 +76,12 @@ quadrantChart
     "Payment Gateway (Stripe)"         : [0.84, 0.8]
     "CRM (HubSpot)"                    : [0.85, 0.6]
 
-    "Currency Conversion API"         : [0.8, 0.4]
     "Geolocation Library"             : [0.8, 0.2]
-    "Email Service (SendGrid)"        : [0.65, 0.3]
+    "Currency Conversion API"         : [0.65, 0.3]
+    "Email Service (SendGrid)"        : [0.8, 0.4]
 ```
 
-**Core Adoption (Internal + Deep)**
+**Core Adoption (Internal Ownership + Deep Depth)**
 
 These dependencies are deeply tied to the organization’s strategic goals and workflows, making them integral to the solution's "core identity."
 
@@ -89,7 +89,7 @@ These dependencies are deeply tied to the organization’s strategic goals and w
 - **Custom Analytics Platform:** An in-house developed solution for all customer and transaction data. This system is critical for long-term analytics, reporting, and compliance.
 - **UI Framework (React):** A front-end framework selected for building all customer-facing applications, the entire front-end ecosystem relies on it, making it difficult to replace.
 
-**Internal Enablers (Internal + Shallow)**
+**Internal Enablers (Internal Ownership + Shallow Depth)**
 
 These are lightweight, internally built tools or utilities designed to support workflows without being deeply ingrained in the architecture.
 
@@ -97,7 +97,7 @@ These are lightweight, internally built tools or utilities designed to support w
 - **Transaction Monitoring Dashboard:** A lightweight internal tool for customer support and operations teams to track payment statuses in real-time.
 - **Custom CSV Parser:** A lightweight, in-house utility designed to parse and process CSV files for internal batch data imports or exports. It’s simple, easily replaceable, and tailored to the organization’s specific formats and workflows, but not deeply integrated into the core system.
 
-**Strategic Outsourcing (External + Deep)**
+**Strategic Outsourcing (External Ownership + Deep Depth)**
 
 These dependencies provide essential functionality but are managed externally, requiring trust in third parties for critical operations.
 
@@ -105,15 +105,54 @@ These dependencies provide essential functionality but are managed externally, r
 - **Payment Gateway (Stripe):** A third-party service to handle payment processing, ensuring PCI compliance and managing global transaction flows.
 - **CRM (HubSpot):** A third-party customer relationship management platform used for managing merchant relationships, customer communications, and sales pipelines. Deeply integrated into marketing, support, and operational workflows, making it critical but externally managed.
 
-**External Plug-and-Play (External + Shallow)**
+**External Plug-and-Play (External Ownership + Shallow Depth)**
 
 These are modular, external solutions that are easy to integrate, replace, or remove.
 
-- **Currency Conversion API:** An external API for real-time currency exchange rates, used in international transactions.
 - **Email Service (SendGrid):** A third-party service for sending payment confirmation emails to customers, reducing the need to manage email servers internally.
+- **Currency Conversion API:** An external API for real-time currency exchange rates, used in international transactions.
 - **Geolocation Library:** A third-party library that identifies user locations based on their IP addresses. Used for fraud detection or tailoring user experiences.
 
-### Key Decision Points
+### Dependency Mapping
+
+Dependency Mapping is a structured technique to identify and evaluate the components your solution relies on. For business leaders, this exercise is revealing—it illustrates how dependencies interact, where risks or opportunities lie, and where strategic decisions might be needed.
+
+Sophisticated tools for automatically detecting software dependencies are incredibly useful, and should be a foundational part of your process. These tools excel at identifying code modules referenced through package management systems and other easily traceable components. However, they may not capture the entire picture—external services accessed via HTTP calls, bespoke integrations, or undocumented systems can remain hidden. 
+
+{{% callout note %}}
+To achieve a truly comprehensive dependency mapping, automated tooling must be complemented by a collaborative team effort to identify and document less obvious dependencies.
+{{% /callout %}}
+
+The result of this process could be as simple as a spreadsheet, structured like the following:
+
+| **Dependency**             | **Ownership**       | **Depth (1–5)** | **Importance** | **Description**                                                                 |
+|-----------------------------|---------------------|-----------------|----------------|---------------------------------------------------------------------------------|
+| Fraud Detection Engine      | Internal (Org)      | 5               | High           | Proprietary system detecting and preventing fraud in real-time.                 |
+| Risk Scoring Model          | Internal (Team)     | 2               | Medium         | ML-based scoring system for transaction risk, easily swappable for iteration.   |
+| Payment Gateway (Stripe)    | External (3rd Party)| 4               | High           | Processes payments, handles compliance (e.g., PCI), critical for operations.    |
+| React Framework             | External (3rd Party)| 5               | High           | Front-end framework used across all customer-facing interfaces.                 |
+| Analytics Platform          | Internal (Org)      | 4               | Medium         | In-house platform tracking transaction metrics and user behavior.               |
+| Currency Conversion API     | External (3rd Party)| 2               | Low            | API providing real-time currency exchange rates for cross-border transactions.  |
+| Email Notification Service  | External (3rd Party)| 1               | Low            | Sends payment confirmation emails to customers, simple and easily replaceable.  |
+
+Dependencies are be categorized based on their characteristics. This categorization helps prioritize focus and resources:
+
+**Ownership:** Who owns and controls the dependency?
+- **Internal (Team):** Built and maintained by a single team.
+- **Internal (Org):** Built or managed by multiple teams within the organization.
+- **External (3rd Party):** Provided by a vendor or open-source community.
+
+**Depth (1–5):** How deeply ingrained is the dependency?
+- **1–2 (Shallow):** Minimal integration, modular, and easy to replace.
+- **3–4 (Moderate):** Some integration into workflows but still manageable.
+- **5 (Deep):** Critical and deeply embedded into the system. Replacement is costly or disruptive.
+
+**Importance:** The business impact of the dependency:
+- **High:** Essential for core functionality.
+- **Medium:** Supports key workflows but can be replaced or temporarily paused.
+- **Low:** Enhances functionality but isn’t critical.
+
+## Key Decision Points
 
 Making dependency decisions requires a balance of technical, business, and strategic considerations. There are many factors that go into this, however there are four common points to evaluate.
 
@@ -126,30 +165,32 @@ Making dependency decisions requires a balance of technical, business, and strat
 
 We can unpack each of these to understand the decision points better:
 
-#### Strategic
+### Strategic
+
 - **Proprietary Advantage:** Is this dependency tied to the core value proposition of your business? If so, owning it might be essential to maintain differentiation.
     - Example: A fintech company may build its fraud detection system to ensure competitive edge rather than rely on a generic third-party solution.
 - **Long-Term Alignment:** Does the dependency fit with the organization’s future goals and technology roadmap? Misaligned dependencies can become costly to replace or adapt.
     - Example: An e-commerce startup choosing Shopify for speed may outgrow its limitations as it scales, requiring a costly migration to a custom-built platform.
 - **Security Considerations:** Does the dependency handle sensitive data or critical workflows? If so, ensure it meets your compliance, privacy, and security requirements.
 
-#### Maturity
+### Maturity
+
 - **Team Expertise:** Does your team have the skills to build and maintain this dependency? Or is it better to rely on external experts?
     - Example: Adopting a managed service like MongoDB Atlas may save time for teams unfamiliar with database tuning and scaling.
 - **Simplicity vs. Complexity:** Will building in-house add unnecessary complexity? Managed services often reduce operational burden but may limit flexibility.
 
-#### Volatility
+### Volatility
+
 - **Dependency Evolution:** Is the dependency in a rapidly changing market? Relying on third-party solutions in such cases ensures you can leverage the latest innovations.
     - Example: Leasing a data center instead of building one offers adaptability as technology evolves.
 - **Business Needs Evolution:** Are your requirements stable, or are they evolving quickly? If your needs outpace the dependency’s capabilities, building custom may be better.
 
-#### Invesment
+### Invesment
+
 - **Build vs. Buy:** Consider the upfront and ongoing costs of building, maintaining, and scaling a solution versus licensing or leasing it.
 - **Hidden Costs:** Factor in integration, data migration, vendor lock-in, and the potential cost of switching providers.
 
 
-
-### Examples of Dependency
 
 ## Trade-Offs
 
