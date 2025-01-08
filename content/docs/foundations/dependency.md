@@ -9,15 +9,15 @@ _Harmonizing internal and external components to create cohesive, effective solu
 
 No software system exists in isolation. Every solution relies on an ecosystem of tools, libraries, platforms, and services, each playing a role in its capability and success. **Dependency** focuses on strategically managing this ecosystem—deciding what to build, what to buy, and how to seamlessly connect all the pieces.
 
-This foundational aspect is about **understanding the core identity of your solution**: what makes it unique and mission-critical? This identity informs decisions about ownership versus reliance. 
+This foundational aspect is about **understanding the core identity of your solution**: _what makes it unique and mission-critical?_ This identity informs decisions about ownership versus reliance. 
 
 Each trade-off requires deep consideration—relying on third-party solutions can accelerate development and offload complexity but introduces risks, such as vendor lock-in, dependency vulnerabilities, or misalignment with future needs. 
 
-Ultimately, Dependency challenges teams to think holistically about the ecosystem their software inhabits.
+Ultimately, **Dependency** challenges teams to think holistically about the ecosystem their software inhabits.
 
 ## What is Dependency?
 
-**Dependency** refers to any component, system, or service that a solution relies on to function. The challenge is defining what we mean by the "solution." The end product seen by stakeholders and users is the result of a symphony of interconnected components stitched together into a cohesive system. In this context, a dependency is something that is less core to the solution's identity, and is more a composable feature that _enables_ the solution.
+**Dependency** refers to any component, system, or service that a solution relies on to function. The challenge is defining what we mean by the "solution." The end product seen by stakeholders and users is the result of a symphony of interconnected components stitched together into a cohesive system. In this context, a dependency is something that is less core to the solution's identity, and is more a composable feature that enables the solution.
 
 {{% callout note %}}
 A **dependency** is anything that the solution relies upon but is not part of its core identity or directly owned.
@@ -60,7 +60,7 @@ quadrantChart
     x-axis Internal --> External
     y-axis Shallow --> Deep
     quadrant-1 "Strategic Outsourcing"
-    quadrant-2 "Core Identity"
+    quadrant-2 "Core Adoption"
     quadrant-3 "Internal Enablers"
     quadrant-4 "External Plug-and-Play"
     
@@ -81,7 +81,7 @@ quadrantChart
     "Email Service (SendGrid)"        : [0.65, 0.3]
 ```
 
-**Core Identity (Internal + Deep)**
+**Core Adoption (Internal + Deep)**
 
 These dependencies are deeply tied to the organization’s strategic goals and workflows, making them integral to the solution's "core identity."
 
@@ -115,7 +115,7 @@ These are modular, external solutions that are easy to integrate, replace, or re
 
 ### Key Decision Points
 
-Making dependency decisions requires a balance of technical, business, and strategic considerations. There are many factors to go into this, however there are four common points to evaluate.
+Making dependency decisions requires a balance of technical, business, and strategic considerations. There are many factors that go into this, however there are four common points to evaluate.
 
 | **Point**           | **Why**                     |
 |---------------------|-----------------------------------|
