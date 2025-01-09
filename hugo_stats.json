@@ -6,6 +6,7 @@
       "aside",
       "b",
       "body",
+      "br",
       "button",
       "circle",
       "div",
@@ -380,6 +381,7 @@
       "capability-mapping",
       "classification",
       "communicating-change",
+      "continuous-monitoring",
       "cost",
       "dependency-classification",
       "dependency-mapping",
@@ -427,6 +429,7 @@
       "the-f6-discovery-process",
       "todo",
       "top",
+      "tracking-dependencies",
       "trade-offs",
       "unexpected-refactoring",
       "volatility",
@@ -434,6 +437,7 @@
       "what-is-dependency",
       "what-is-volatility",
       "why-i-created-the-framework",
+      "why-this-matter",
       "why-this-matters",
       "workflow-change-and-database-access-patterns"
     ]

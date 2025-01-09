@@ -11,7 +11,7 @@ No software system exists in isolation. Every solution relies on an ecosystem of
 
 This foundational aspect is about **understanding the core identity of your solution**: _what makes it unique and mission-critical?_ This identity informs decisions about ownership versus reliance. 
 
-Each trade-off requires deep consideration—relying on third-party solutions can accelerate development and offload complexity but introduces risks, such as vendor lock-in, dependency vulnerabilities, or misalignment with future needs. 
+Each decision requires deep consideration—relying on third-party solutions can accelerate development and offload complexity but introduces risks, such as vendor lock-in, dependency vulnerabilities, or misalignment with future needs. 
 
 Ultimately, **Dependency** challenges teams to think holistically about the ecosystem their software inhabits.
 
@@ -113,59 +113,20 @@ These are modular, external solutions that are easy to integrate, replace, or re
 - **Currency Conversion API:** An external API for real-time currency exchange rates, used in international transactions.
 - **Geolocation Library:** A third-party library that identifies user locations based on their IP addresses. Used for fraud detection or tailoring user experiences.
 
-### Dependency Mapping
-
-Dependency Mapping is a structured technique to identify and evaluate the components your solution relies on. For business leaders, this exercise is revealing—it illustrates how dependencies interact, where risks or opportunities lie, and where strategic decisions might be needed.
-
-Sophisticated tools for automatically detecting software dependencies are incredibly useful, and should be a foundational part of your process. These tools excel at identifying code modules referenced through package management systems and other easily traceable components. However, they may not capture the entire picture—external services accessed via HTTP calls, bespoke integrations, or undocumented systems can remain hidden. 
-
-{{% callout note %}}
-To achieve a truly comprehensive dependency mapping, automated tooling must be complemented by a collaborative team effort to identify and document less obvious dependencies.
-{{% /callout %}}
-
-The result of this process could be as simple as a spreadsheet, structured like the following:
-
-| **Dependency**             | **Ownership**       | **Depth (1–5)** | **Importance** | **Description**                                                                 |
-|-----------------------------|---------------------|-----------------|----------------|---------------------------------------------------------------------------------|
-| Fraud Detection Engine      | Internal (Org)      | 5               | High           | Proprietary system detecting and preventing fraud in real-time.                 |
-| Risk Scoring Model          | Internal (Team)     | 2               | Medium         | ML-based scoring system for transaction risk, easily swappable for iteration.   |
-| Payment Gateway (Stripe)    | External (3rd Party)| 4               | High           | Processes payments, handles compliance (e.g., PCI), critical for operations.    |
-| React Framework             | External (3rd Party)| 5               | High           | Front-end framework used across all customer-facing interfaces.                 |
-| Analytics Platform          | Internal (Org)      | 4               | Medium         | In-house platform tracking transaction metrics and user behavior.               |
-| Currency Conversion API     | External (3rd Party)| 2               | Low            | API providing real-time currency exchange rates for cross-border transactions.  |
-| Email Notification Service  | External (3rd Party)| 1               | Low            | Sends payment confirmation emails to customers, simple and easily replaceable.  |
-
-Dependencies are be categorized based on their characteristics. This categorization helps prioritize focus and resources:
-
-**Ownership:** Who owns and controls the dependency?
-- **Internal (Team):** Built and maintained by a single team.
-- **Internal (Org):** Built or managed by multiple teams within the organization.
-- **External (3rd Party):** Provided by a vendor or open-source community.
-
-**Depth (1–5):** How deeply ingrained is the dependency?
-- **1–2 (Shallow):** Minimal integration, modular, and easy to replace.
-- **3–4 (Moderate):** Some integration into workflows but still manageable.
-- **5 (Deep):** Critical and deeply embedded into the system. Replacement is costly or disruptive.
-
-**Importance:** The business impact of the dependency:
-- **High:** Essential for core functionality.
-- **Medium:** Supports key workflows but can be replaced or temporarily paused.
-- **Low:** Enhances functionality but isn’t critical.
-
 ## Key Decision Points
 
-Making dependency decisions requires a balance of technical, business, and strategic considerations. There are many factors that go into this, however there are four common points to evaluate.
+Making dependency decisions requires a balance of technical, business, and strategic considerations. The table below offers a way to evaluate a build vs. buy (i.e, ownership versus reliance) decisions.
 
-| **Point**           | **Why**                     |
+| **Point**           | **Consideration**                 |
 |---------------------|-----------------------------------|
 | **Strategic**       | Proprietary Advantage, Long-Term Alignment, Security Considerations |
-| **Maturity**        | Team Expertise, Simplicity vs. Complexity |
+| **Maturity**        | Team Expertise, Complexity |
 | **Volatility**      | Dependency Evolution, Business Needs Evolution |
 | **Invesment**       | Build vs. Buy, Hidden Costs |
 
 We can unpack each of these to understand the decision points better:
 
-### Strategic
+**Strategic**
 
 - **Proprietary Advantage:** Is this dependency tied to the core value proposition of your business? If so, owning it might be essential to maintain differentiation.
     - Example: A fintech company may build its fraud detection system to ensure competitive edge rather than rely on a generic third-party solution.
@@ -177,7 +138,7 @@ We can unpack each of these to understand the decision points better:
 
 - **Team Expertise:** Does your team have the skills to build and maintain this dependency? Or is it better to rely on external experts?
     - Example: Adopting a managed service like MongoDB Atlas may save time for teams unfamiliar with database tuning and scaling.
-- **Simplicity vs. Complexity:** Will building in-house add unnecessary complexity? Managed services often reduce operational burden but may limit flexibility.
+- **Complexity:** Will building in-house add unnecessary complexity? Managed services often reduce operational burden but may limit flexibility.
 
 ### Volatility
 
@@ -190,7 +151,51 @@ We can unpack each of these to understand the decision points better:
 - **Build vs. Buy:** Consider the upfront and ongoing costs of building, maintaining, and scaling a solution versus licensing or leasing it.
 - **Hidden Costs:** Factor in integration, data migration, vendor lock-in, and the potential cost of switching providers.
 
+## Tracking Dependencies
 
+When developing software, engineers often search for dependencies of all kinds to avoid reinventing the wheel. While this can accelerate development, it may also lead to unintended consequences, such as security and licensing concerns, misalignment with strategic goals, or costly refactorings when a dependency fails to meet long-term needs.
+
+So how do you keep track of these dependencies? Sophisticated tools for automatically detecting software dependencies are incredibly useful and should form the foundation of your process. These tools excel at identifying code modules referenced through package management systems and other easily traceable components. However, they may not capture the full picture—external services accessed via HTTP calls, bespoke integrations, or undocumented systems can remain hidden. That’s why having humans in the loop is essential to verify the information and uncover dependencies that might otherwise go unnoticed.
+
+{{% callout note %}}
+To achieve a truly comprehensive dependency mapping, automated tooling must be complemented by a collaborative team effort to identify and document less obvious dependencies.
+{{% /callout %}}
+
+Regardless of the tools used, the goal is the same: to identify and evaluate the components your solution relies on. For business leaders, this exercise is invaluable—it reveals how dependencies interact, highlights risks and opportunities, and pinpoints where strategic decisions may be needed.
+
+The end result of this process could be as simple as a spreadsheet, structured like the following:
+
+| **Dependency**             | **Ownership**       | **Depth** | **Importance** | **Description**                                                                 |
+|-----------------------------|---------------------|-----------------|----------------|---------------------------------------------------------------------------------|
+| Fraud Detection Engine      | Internal (Team A)   | 5               | High           | Proprietary system detecting and preventing fraud in real-time.                 |
+| Risk Scoring Model          | Internal (Team B)   | 2               | Medium         | ML-based scoring system for transaction risk, easily swappable for iteration.   |
+| Payment Gateway             | External (Stripe)   | 4               | High           | Processes payments, handles compliance (e.g., PCI), critical for operations.    |
+| React Framework             | External (React)    | 5               | High           | Front-end framework used across all customer-facing interfaces.                 |
+| Analytics Platform          | Internal (Team C)   | 4               | Medium         | In-house platform tracking transaction metrics and user behavior.               |
+| Currency Conversion API     | External (3rd Party)| 2               | Low            | API providing real-time currency exchange rates for cross-border transactions.  |
+| Email Notification Service  | External (SendGrid) | 1               | Low            | Sends payment confirmation emails to customers, simple and easily replaceable.  |
+
+Dependencies can be categorized based on their characteristics:
+
+**Ownership:** Who owns and controls the dependency?
+- **Internal (Team):** Built and maintained by one or more teams within the organization.
+- **External (3rd Party):** Provided by a vendor or open-source community.
+
+**Depth (1–5):** How deeply ingrained is the dependency?
+- **1–2 (Shallow):** Minimal integration, modular, and easy to replace.
+- **3–4 (Moderate):** Some integration into workflows but still manageable.
+- **5 (Deep):** Critical and deeply embedded into the system. Replacement is costly or disruptive.
+
+**Importance:** The business impact of the dependency:
+- **High:** Essential for core functionality.
+- **Medium:** Supports key workflows but can be replaced or temporarily paused.
+- **Low:** Enhances functionality but isn’t critical.
+
+### Continuous Monitoring
+
+Technology evolves rapidly, and even if you haven’t changed your solution, your third-party dependencies likely have. New versions are released regularly to address defects, patch security vulnerabilities, and introduce new features. Monitoring these changes should be an ongoing process, which is why tools and automations that continuously scan and produce dependency reports are invaluable.
+
+However, don't forget the human in the loop! Regular reviews of automated reports, combined with periodic manual updates, help maintain a clear understanding of the ecosystem supporting your solution. This proactive approach ensures you stay ahead of potential surprises, such as deprecated features or newly introduced risks, and maintain the stability and reliability of your solution.
 
 ## Trade-Offs
 
@@ -223,3 +228,7 @@ A Docker base image serves as the starting point for these containers, providing
 | **Standard Image**       | Broad support, ease of use                     | Stable, widely understood, and secure     | Larger size, may include unnecessary dependencies | Limited optimization for specific use cases |
 | **Minimalist Image**      | Smaller size, faster builds, reduced attack surface | Efficient and lightweight                 | Dependency conflicts, harder debugging   | May require frequent updates or fixes    |
 | **Custom Niche Image**    | Tailored to project, optimized for specific needs | Highly streamlined for unique requirements| Lack of transparency, higher risk of issues | Abandonment, lack of long-term support    |
+
+## Why this Matter
+
+This Long tail.
