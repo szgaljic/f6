@@ -72,7 +72,7 @@ For **implementation team members**, remember that you are not alone in making t
 
 ## Next Steps
 
-Understanding the F6 Framework begins with recognizing the "knobs" available to influence project outcomes. Each foundation provides a means to discuss these "knobs," emphasizing how each decision imapacts the project's trajectory.
+Understanding the F6 Framework begins with recognizing the levers available to influence project outcomes. Each foundation provides a means to discuss these levers, emphasizing how each decision imapacts the project's trajectory.
 
 Stakeholders gain a clearer understanding of the trade-offs inherent in their decisions, while implementation teams can turn these insights into actionable strategies. For instance, when evaluating system architecture, implementation teams might explain trade-offs like this:
 
