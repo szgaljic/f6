@@ -1,5 +1,5 @@
 ---
-title: Risk
+title: Risks
 weight: 4
 ---
 
