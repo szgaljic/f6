@@ -1,11 +1,11 @@
 ---
-title: Capability
+title: Features
 weight: 1
 ---
 
 ## Overview
 
-_Ensuring technology delivers its intended purpose with intentionality._
+_“What should the solution do?”_
 
 At its core, software exists to solve problems and deliver value to users and stakeholders. **Capability represents the foundation of functionality**—the workflows, features, and solutions that define the software’s purpose. 
 

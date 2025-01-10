@@ -1,11 +1,11 @@
 ---
 title: Security
-weight: 4
+weight: 3
 ---
 
 ## Overview
 
-_Protecting systems and users with vigilance and detail._
+_“How do we protect assets?”_
 
 In an interconnected world, where data flows freely and software powers critical systems, security is not optional—it’s expected. Security is about more than defense; it’s about trust. Users, stakeholders, and organizations depend on software that safeguards their data, privacy, and operations against ever-evolving threats.
 

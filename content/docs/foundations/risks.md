@@ -1,11 +1,11 @@
 ---
-title: Volatility
-weight: 2
+title: Risk
+weight: 4
 ---
 
 ## Overview
 
-_Navigating the contours of change with curiosity and precision._
+_“What assumptions might change, and how do we adapt?_
 
 It’s been said that the only constant in life is **change**. Software is no different; it’s a depreciating asset that must be updated, altered, and maintained to stay effective.
 

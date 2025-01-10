@@ -15,27 +15,27 @@ sections:
       title: The F6 Framework
       text: Helping business leaders achieve better technology project outcomes.
       items:
-        - name: Capability
+        - name: Features
           icon: puzzle-piece
-          description: Ensuring technology delivers its intended purpose with intentionality.      
-        - name: Volatility 
-          icon: bolt
-          description: Navigating the contours of change with curiosity and precision.
-        - name: Dependency
+          description: Define the solution.
+        - name: Dependencies
           icon: link
-          description: Harmonizing internal and external components to create cohesive, effective solutions.
+          description: Decide what to build, buy, or integrate.
         - name: Security
           icon: shield-check
-          description: Protecting systems and users with vigilance and detail.
-        - name: Resiliency
+          description: Have a plan to protect assets.
+        - name: Risks
+          icon: bolt
+          description: Anticipate and prepare for challenges.
+        - name: Optimizations
           icon: server
-          description: Building solutions that endure, adapt, and perform as expected.
-        - name: Investment
+          description: Maximize output and minimize waste.
+        - name: Investments
           icon: chart-pie
-          description: Aligning time, money, and resources to deliver valuable solutions.
+          description: Understand the time and cost.
   - block: cta-card
     content:
-      title: "Bring clarity to technology solutions."
+      title: "Bring clarity to your solutions."
       text: <b>F6</b> empowers business leaders to navigate the complexity of building technology with purpose. This holistic approach to development helps align business goals with technical decisions for sustainable success.
       button:
         text: Get Started

@@ -8,7 +8,7 @@ In my career as CTO and technology consultant, I’ve worked on countless softwa
 
 Stakeholders often focus on business needs, deadlines, and outcomes, while implementation teams think in terms of technical challenges, feasibility, and trade-offs. These two perspectives rarely align, leading to frustration, misalignment, and missed opportunities. The F6 Framework was created to bridge this gap.
 
-This framework defines six foundational aspects of software development: **Capability**, **Volatility**, **Dependency**, **Security**, **Resiliency**, and **Investment**. These domains provide a structured way to hold conversations, find common ground, and unlock the trapped potential I’ve seen in so many stalled or misaligned projects. It’s a tool to foster understanding and collaboration, helping teams achieve the outcomes everyone is striving for.
+This framework defines six foundational aspects of software development: **Features**, **Dependencies**, **Security**, **Risk**, **Optimizations**, and **Investments**. These domains provide a structured way to hold conversations, find common ground, and unlock the trapped potential I’ve seen in so many stalled or misaligned projects. It’s a tool to foster understanding and collaboration, helping teams achieve the outcomes everyone is striving for.
 
 ## About Me
 
