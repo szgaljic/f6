@@ -151,6 +151,10 @@ We can unpack each of these to understand the decision points better:
 - **Build vs. Buy:** Consider the upfront and ongoing costs of building, maintaining, and scaling a solution versus licensing or leasing it.
 - **Hidden Costs:** Factor in integration, data migration, vendor lock-in, and the potential cost of switching providers.
 
+## Foundational Impacts 
+
+TBD
+
 ## Tracking Dependencies
 
 When developing software, engineers often search for dependencies of all kinds to avoid reinventing the wheel. While this can accelerate development, it may also lead to unintended consequences, such as security and licensing concerns, misalignment with strategic goals, or costly refactorings when a dependency fails to meet long-term needs.

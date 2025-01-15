@@ -5,31 +5,31 @@ weight: 4
 
 ## Overview
 
-_“What assumptions might change, and how do we adapt?_
+_"What risks might we face, and how do we manage them?"_
 
-It’s been said that the only constant in life is **change**. Software is no different; it’s a depreciating asset that must be updated, altered, and maintained to stay effective.
+In software development, risk is inevitable—whether it's tied to changing requirements, shifting market demands, or technical complexities. Software is no different; it’s a depreciating asset that must be updated, altered, and maintained to stay effective.
 
-The **Volatility** foundation emphasizes the balance between rapid progress and thoughtful precision. It acknowledges the duality of software development: the need to deliver impactful results quickly while ensuring those results are built with the care and precision required for their intended lifetime. 
+The **Risks** foundation emphasizes the balance between speed and sustainability. It explores the duality of delivering impactful results quickly while ensuring those results are built with the foresight and precision needed to support long-term goals.
 
-This aspect recognizes a sliding scale: are you building for the "here and now," accepting the potential for more significant rewrites later, or investing in a foundation that supports seamless evolution over time? Both approaches have their place, depending on the solutions goals, constraints, and maturity. [Software is never truly "done," and every decision made today influences how effectively it can evolve tomorrow.](https://insights.jahnelgroup.com/software-is-a-depreciating-asset-why-your-software-is-never-done)
+This foundation highlights a critical decision-making spectrum: are you optimizing for the "here and now," accepting the likelihood of larger adjustments later, or are you investing in a foundation that mitigates risk and allows for seamless evolution over time? Both approaches have their place, depending on the goals, constraints, and maturity of the solution. Every decision made today shapes how effectively a system can adapt and thrive tomorrow.
 
-## What is Volatility?
+> [Software is never truly "done," and every decision made today influences how effectively it can evolve tomorrow.](https://insights.jahnelgroup.com/software-is-a-depreciating-asset-why-your-software-is-never-done)
 
-**Volatility** refers to the degree of uncertainty and change over the lifetime of a solution. It encompasses both internal factors, such as evolving requirements, and external influences, such as market shifts, customer demands, or integration with third-party systems.
+## What is Risk?
+
+**Risk** refers to the potential for unexpected outcomes or challenges over the lifecycle of a solution. These risks can stem from internal factors, such as shifting priorities or technical decisions, as well as external forces, like market disruptions, regulatory changes, or dependencies on third-party systems. 
 
 {{% callout note %}}
 **Uncertainty** is the most significant factor influencing the success of a project. It drives both over-engineering and the failure to meet expectations.
 {{% /callout %}}
 
-Anticipating change is difficult. Stakeholders often stuggle with future uncertainties, and without clear guidance, implementation teams will either spend excessive time creating costly, overengineered solutions or default to overly rigid, generic designs that fail to meet actual needs.
+Identifying risks and anticipating change is difficult. Stakeholders often struggle to balance future uncertainties, prioritize effectively, and weigh risk mitigation against feature development. Without clear guidance, implementation teams may overengineer costly solutions or create rigid designs that fail to adapt or meet real needs.
 
 By exploring "what if" scenarios and applying structured techniques, teams can make better decisions on where flexibility is needed and where it isn’t.
 
-### Examples of Volatility
+### Examples of Risk
 
-Volatility, or change, manifests in various ways depending on the context of the project.
-
-Here are some examples: 
+Here are specific scenarios that illustrate different types of risks:
 
 - **Evolving Business Requirements:** A product team might initially prioritize one set of features, only to shift focus based on customer feedback or market trends. For example, a platform that starts as a B2C tool might later pivot to support B2B workflows, requiring major changes to permissions, reporting, and integrations.
 - **Integration with External Systems:** A system reliant on third-party APIs or SaaS platforms might face frequent updates, deprecations, or vendor changes. For instance, a payment processing integration might require adapting to new compliance standards or API upgrades every year.
@@ -52,7 +52,7 @@ Every business faces unique challenges, yet certain themes tend to emerge consis
 | **Technological Advancements** | Emerging programming languages, frameworks, tools, and hardware innovations drive opportunities and challenges. | Requires updates to leverage efficiencies, maintain competitiveness, and prevent obsolescence. |
 | **User-Centric Changes**     | User feedback, modern UI trends, and usability expectations highlight areas for improvement.              | Enhances customer satisfaction and system adoption through regular updates and redesigns.   |
 
-Encouraging everyone to think about "what if" scenarios helps surface areas of volatility that might not otherwise be apparent. Here are some example questions that can guide this process:
+Encouraging everyone to think about "what if" scenarios helps surface areas of risk that might not otherwise be apparent. Here are some example questions that can guide this process:
 
 | **Question**                                                   | **Reasoning**                                                                                     |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -73,9 +73,9 @@ Building for immediate needs prioritizes speed and simplicity, delivering result
 To effectively communicate "what ifs" and the impacts of trade-offs it's critical to frame it in terms that resonate with the business. This involves translating technical details into tangible business outcomes:
 
 - **Cost of Flexibility:** Explain how adding flexibility in a volatile area (e.g., building an extensible API) will increase initial development time but reduce costs and disruption when future changes are needed.
-- **Impact of Rigidity:** If a solution is designed without accounting for volatility, highlight the risks, such as expensive refactoring, downtime, or delayed market response when changes inevitably arise.
+- **Impact of Rigidity:** If a solution is designed without accounting for changes, highlight the risks, such as expensive refactoring, downtime, or delayed market response when changes inevitably arise.
 - **Balancing Short-Term and Long-Term Goals:** Demonstrate how thoughtful investments in change management—like modular design or abstraction—can align with business timelines while avoiding technical debt.
-- **Realistic Expectations for Change:** Frame volatility as an expected and manageable reality, emphasizing that flexibility requires trade-offs but reduces risk over the system’s lifetime. For example:
+- **Realistic Expectations for Change:** Frame change as an expected and manageable reality, emphasizing that flexibility requires trade-offs but reduces risk over the system’s lifetime. For example:
     - _“If we don’t account for the potential of pivoting to a B2B model, implementing those features later will cost 3x as much and delay delivery by 6 months.”_
     - _“Building in flexibility now adds 10% to development time but ensures we can handle third-party API changes without a full rewrite.”_
 
@@ -83,21 +83,21 @@ To effectively communicate "what ifs" and the impacts of trade-offs it's critica
 
 High-level trends (e.g., market shifts) are often discussed, but anticipating how those changes cascade into technical decisions—from feature adaptability to data migration strategies—requires both foresight and agility.
 
-Volatility often acts as a headwind for other F6 Foundations, as uncertainty complicates planning, execution, and maintenance. Here’s how it interacts:
+Risk acts as a headwind for other F6 Foundations, as uncertainty complicates planning, execution, and maintenance. Here’s how it interacts:
 
-| **Foundation**                                                   | **Impact of Volatility**                                                                                     |
+| **Foundation**                                                   | **Impact of Risk**                                                                                     |
 |----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Capability | High volatility can make it harder to achieve feature-rich, reliable solutions, as requirements may shift during development. |
+| Capability | High risk can make it harder to achieve feature-rich, reliable solutions, as requirements may shift during development. |
 | Dependency | Frequent change strains the entire underlying eco-system, increasing risk across the board. |
-| Security | Adapting to volatility often introduces new attack surfaces or vulnerabilities, requiring constant vigilance. |
+| Security | Risk often introduces new attack surfaces or vulnerabilities, requiring constant vigilance. |
 | Resilience | Unanticipated changes can undermine a system's design and stability, increasing the likelihood of failure or downtime. |
 | Investment | Higher uncertainty often means higher costs, as adapting to change requires more resources. |
 
-Tailwinds? Volatility rarely makes other foundations easier to address. The closest "benefit" is that embracing volatility forces teams to prioritize adaptability, which can create solutions better suited to long-term evolution.
+Tailwinds? Risk rarely makes other foundations easier to address. The closest "benefit" is that embracing risk forces teams to prioritize adaptability, which can create solutions better suited to long-term evolution.
 
 ## Trade-Offs
 
-Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few real world examples of volatility and possible trade-offs.
+Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few real world examples of risk and possible trade-offs.
 
 ### Market Shift from B2B to B2C
 
@@ -129,7 +129,7 @@ Could the team have anticipated the need for enterprise-level features during th
 
 ### Workflow Change and Database Access Patterns
 
-Changes in business workflows can introduce significant volatility into the design of underlying technologies, often requiring reevaluation of earlier decisions. A common example involves databases, where changes in access patterns can drastically impact performance and cost.
+Changes in business workflows can introduce significant risk into the design of underlying technologies, often requiring reevaluation of earlier decisions. A common example involves databases, where changes in access patterns can drastically impact performance and cost.
 
 Consider, a logistics company initially using DynamoDB, an extremely fast yet rigid database, for quick point lookups, such as retrieving the status of individual shipments. Over time, the company introduced analytics features allowing customers to view trends across all shipments. This required broader queries that scanned the entire database, causing costs to skyrocket and performance to degrade. The team faced a decision: stick with DynamoDB and optimize queries, migrate to a relational database like PostgreSQL, or use both databases for their respective strengths.
 
@@ -186,6 +186,6 @@ This approach is grounded in trust and transparency. Stakeholders and implementa
 
 ## Why This Matters
 
-The key question of volatility is: “What might shift, and how do we adapt?” While predicting the future is impossible, asking “what-if” helps uncover potential changes and align expectations. By exploring these possibilities, teams can strategically focus effort on areas most likely to evolve.
+The key question of risk is: “What might shift, and how do we adapt?” While predicting the future is impossible, asking “what-if” helps uncover potential changes and align expectations. By exploring these possibilities, teams can strategically focus effort on areas most likely to evolve.
 
-Success in navigating volatility requires shared horizon thinking, where stakeholders and implementation teams work collaboratively to anticipate, communicate, and address potential shifts. This alignment ensures that resources are applied thoughtfully, enabling systems to adapt and thrive in an ever-changing landscape.
+Success in navigating risk requires shared horizon thinking, where stakeholders and implementation teams work collaboratively to anticipate, communicate, and address potential shifts. This alignment ensures that resources are applied thoughtfully, enabling systems to adapt and thrive in an ever-changing landscape.

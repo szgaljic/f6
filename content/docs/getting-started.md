@@ -19,7 +19,7 @@ F6 does not replace methodologies like Agile, Scrum, or Lean. Instead, it layers
 | **Features** | Defines functional requirements.              | "What should the solution do?" A feature-rich e-commerce platform requires well-defined workflows and functionality. |
 | **Dependencies** | Evaluates external reliance.              | "What do we build, buy, or integrate?" Choosing a third-party payment gateway can reduce development effort but introduce long-term risks. |
 | **Security**   | Safeguards data and systems.                | "How do we protect assets?" Compliance with regulations like GDPR or SOC 2 is crucial for systems handling sensitive user data. |
-| **Risks** | Accounts for challenges over time.                 | "What might shift, and how do we adapt?" In a startup, rapidly changing market demands may necessitate flexible architecture. |
+| **Risks** | Accounts for uncertainty over time.                 | "What risks might we face, and how do we manage them?" In a startup, rapidly changing market demands may necessitate flexible architecture. |
 | **Optimizations** | Focuses on efficiency and performance.   | "How can we maximize output and minimize waste?" Implementing automation strategies to reduce downtime and improve quality. |
 | **Investments** | Allocates resources.                       | "What’s the time and cost?" Balancing budget constraints with project goals.                     |
 
