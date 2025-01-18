@@ -40,9 +40,9 @@ Here are specific scenarios that illustrate different types of risks:
 
 Change is neither inherently good nor bad—it's the unpredictability of it that often causes the greatest challenges.
 
-To be anticipate it requires curiosity and active participation. Cross-functional teams must come together and have open-minded discussions. Collaborative conversations often uncover insights and sparks epiphanies, driven by diverse perspectives.
+To anticipate potential for change requires curiosity and active participation. Cross-functional teams must come together and have open-minded discussions. Collaborative conversations often uncover insights and sparks epiphanies, driven by diverse perspectives.
 
-Every business faces unique challenges, yet certain themes tend to emerge consistently: 
+Every business faces unique challenges, yet certain themes tend to emerge consistently. It helps to frame these conversations around a few key categories: 
 
 | **Category**         | **Risk**                                                                                              | **Example**                                                                                       |
 |----------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
@@ -85,23 +85,63 @@ To effectively communicate risk it helps to frame it in terms that resonate with
 **Technical Flexibility and Scalability Risks:** Communicate the risks of technical decisions, such as choosing rigid systems, underestimating scalability needs, or adopting immature technologies.
 - _“Using this database solution works for our current scale, but if demand doubles, it may require costly reengineering.”_
 
-## Foundational Impacts
+## Adapting to Change
 
-Risk acts as clear a headwind for other F6 Foundations, as uncertainty complicates planning, execution, and maintenance. Here’s how it interacts:
+The ability to adapt is essential in managing risks. Successfully navigating these challenges requires both **proactive risk management**—anticipating potential issues and planning for them—and **reactive adaptation**, addressing unforeseen disruptions effectively when they arise.
 
-| **Foundation**                                                   | **Impact of Risk**                                                                                     |
-|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| Capability | High risk can make it harder to achieve feature-rich, reliable solutions, as requirements may shift during development. |
-| Dependency | Frequent change strains the entire underlying eco-system, increasing risk across the board. |
-| Security | Risk often introduces new attack surfaces or vulnerabilities, requiring constant vigilance. |
-| Resilience | Unanticipated changes can undermine a system's design and stability, increasing the likelihood of failure or downtime. |
-| Investment | Higher uncertainty often means higher costs, as adapting to change requires more resources. |
+Once again the key to success is collaboration between stakeholders and implementation teams, ensuring that decisions align with both business priorities and technical realities. The following table outlines strategies for mitigating and adapting to risks across key categories, paired with real-world examples:
 
-Tailwinds? Risk rarely makes other foundations easier to address. The closest "benefit" is that embracing risk forces teams to prioritize adaptability, which can create solutions better suited to long-term evolution.
+| **Category**           | **Mitigation Strategies**                                                                                      | **Example**                                                                                     |
+|------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
+| **Strategic Risks**     | Align technical decisions with long-term business goals.<br><br>Regularly review strategic priorities to ensure technical solutions evolve with business needs.                                                   | A SaaS company avoids focusing solely on enterprise clients by exploring demand from small businesses, preventing missed opportunities. |
+| **Market Dynamics**     | Stay attuned to customer feedback and competitor innovations through regular market analysis.<br><br>Build modular solutions to enable rapid feature development in response to market shifts.               | An e-commerce platform adopts same-day delivery to stay competitive with market leaders.      |
+| **Regulatory Risks**    | Monitor industry regulations proactively and engage with legal advisors to anticipate compliance needs.<br><br>Design systems with flexibility to adapt to future regulatory changes.    | A healthcare app adds encryption and audit trails to meet new patient privacy laws.           |
+| **Operational Risks**   | Automate repetitive processes to reduce errors and increase efficiency.<br><br>Conduct regular training to ensure teams can adapt to changes in workflows or technology.                                    | A logistics company implements CI/CD pipelines to eliminate downtime during deployments.      |
+| **Technical Risks**     | Adopt evoluationary designs and resilient architecture, to isolate failures and improve scalability.<br><br>Regularly evaluate dependencies for security, support, and future compatibility.         | A company mitigates the risk of a deprecated API by designing a modular integration layer.    |
 
-## Trade-Offs
+## Horizon Thinking
 
-Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few real world examples of risk and possible trade-offs.
+In software development, the balance between short-term and long-term thinking often begins with the push for a Minimum Viable Product (MVP). While this approach is vital for speed and agility, it can expose gaps in communication between stakeholders and implementation teams. These gaps lead to three common scenarios, each with key lessons for better collaboration.
+
+{{% callout note %}}
+Each of these scenarios underscores the importance of clear, ongoing communication and collaboration between stakeholders and implementation teams. The key takeway—whether you pay the cost upfront or later, **the goal is to avoid surprises**. Success comes from aligning on a shared vision, understanding trade-offs, and making intentional decisions together.
+{{% /callout %}}
+
+| **Scenario**              | **Why It Happened**                                                                                                   | **How to Avoid**                                                                                                         |
+|---------------------------|----------------------------------------------------------------------------------------------------------------------|-------------------------------------------------------------------------------------------------------------------------|
+| **Unexpected Refactoring** | Assumptions about future needs were incomplete or incorrect, leading to architecture limitations and costly rewrites. | Clearly communicate known requirements and milestones. Regularly review assumptions to avoid surprises as the system evolves. |
+| **Overengineered Solutions** | Vague or insufficient details from stakeholders led the technical team to overcompensate, building for hypothetical needs. | Provide clear milestones and focus on immediate priorities. Ensure collaboration to balance future-proofing with practicality. |
+| **Balanced Collaboration** | Stakeholders and technical teams worked together with mutual curiosity and understanding of goals.                     | Maintain open communication, align on trade-offs, and prioritize shared ownership of risks and decisions.                |
+
+{{< spoiler text="Click for more detailed scenarios" >}}
+### Unexpected Refactoring
+
+A stakeholder requests a small MVP with the understanding that it can grow incrementally over time. They envision each new feature adding small impacts, seamlessly building on the initial product. But then, out of nowhere—the technical team announces that the architecture can no longer handle the additional features. Everything needs to be refactored, causing delays and skyrocketing costs.
+
+- **Why It Happens:** Systems are built with assumptions in mind. If those assumptions—often based on incomplete or omitted information—prove incorrect, the entire architecture may need to change. Sometimes stakeholders omit critical details to save time or reduce costs, believing these details won’t matter yet. Other times, they simply don’t realize the relevance of those details.
+
+- **How to Avoid It:** Stakeholders must communicate clearly and proactively about what they believe to be true and stable until specific milestones, such as the next six months, onboarding a major customer, or securing funding. They must also critically assess what features or capabilities they will—and will not—get within those milestones to avoid surprises down the road.
+
+### Overengineered Solutions
+
+A stakeholder provides vague or minimal details, perhaps due to time constraints, a lack of experience with technology solutions, or insufficient involvement and curiosity. Eager to anticipate future needs, the implementation team creates an elaborate, overly complex solution for a problem that doesn’t yet exist—or may never exist. Time and money are wasted, and the stakeholder grows frustrated as deadlines slip and no tangible product emerges.
+
+- **Why It Happens:** Without clear direction, implementation teams may overcompensate by planning for hypothetical scenarios. While well-intentioned, these efforts often solve problems that are far in the future or unlikely to occur, diverting resources from immediate priorities.
+
+- **How to Avoid It:** Stakeholders must communicate a clear vision of what is needed at each milestone, while also offering insights into long-term business goals. Collaboration is key: when technical teams explain the foundational groundwork required for future features, stakeholders must weigh the cost of doing it now versus incurring larger costs through future refactoring. Experienced stakeholders understand that delaying groundwork to validate the product is often a strategic choice, while inexperienced ones may be caught off guard when future costs arise.
+
+### Balanced Collaboration
+
+In the ideal case, stakeholders and implementation teams achieve alignment through shared curiosity, collaboration, and mutual understanding. The stakeholder is actively involved, learning enough about the technology to make informed decisions. The implementation team is equally engaged, learning enough about the business to understand its drivers and priorities. Together, they strike a balance between delivering an MVP and laying the groundwork for future needs.
+
+- **Why It Works:** This approach is grounded in trust and transparency. Stakeholders and implementation teams recognize the shared goal of delivering a valuable product while managing risk and cost. By staying engaged and maintaining open communication, they avoid the pitfalls of both underplanning and overengineering.
+    - **Stakeholders** should remain curious and involved, asking questions to understand technical decisions and how they align with business goals.
+    - **Implementation teams** should prioritize understanding the “why” behind business drivers, ensuring their solutions align with the broader vision.
+{{< /spoiler >}}
+
+## Examples
+
+Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few more real world examples of risk and possible trade-offs.
 
 ### Market Shift from B2B to B2C
 
@@ -119,23 +159,25 @@ Consider a SaaS company that has historically served corporate clients (B2B), of
 
 Should the implementation team have foreseen this impending customer base shift? Would the increased complexity and development time required for pervasive permissioning throughout the application have been justified, or dismissed as over-engineering at the time? Did the business fail to anticipate this future market opportunity, neglecting to allocate funding early enough to make the system nimble and ready to capitalize on it quickly? 
 
-### Multi-Tenancy (SaaS Example)
+### Antiquated UI and Full Rewrite
 
-[Multi-tenancy](https://en.wikipedia.org/wiki/Multitenancy) is a fundamental architectural decision in SaaS platforms that significantly impacts scalability, operational costs, and security. As businesses grow and their user base diversifies, these decisions become even more critical, as they determine how effectively the system can evolve and handle new demands.
+In the fast-evolving world of software, relying on outdated technologies can create significant risks, particularly when those technologies reach the limits of usability, security, or client expectations. A once-functional solution can become a critical liability when it no longer aligns with modern requirements or standards.
 
-Consider a SaaS platform designed for small businesses, where the team initially chose a shared database model for its simplicity and cost-efficiency. As the platform gains traction, larger enterprise customers join, demanding more rigorous data isolation, customized features, and guaranteed performance. The original model starts to show strain, leading the team to evaluate new approaches.
+Consider a financial services platform built decades ago using Java applets—a technology that was once a cornerstone for creating interactive web applications. While the platform initially met client needs and industry standards, it now faces mounting challenges. Modern browsers have deprecated support for Java applets due to significant security vulnerabilities, and clients expect a sleek, user-friendly interface that Java applets cannot deliver. These gaps have left the company with only one viable option: a full rewrite of the platform using modern web technologies such as Angular or React.
 
-- **Option 1 - Shared Database Model:** A single database serves all tenants, segregating data using identifiers. This approach is cost-effective and simpler to manage but comes with increased risks around data isolation and performance issues.
-- **Option 2 - Database-Per-Tenant Model:** Each tenant has its own database, providing better data isolation and customization options. However, this increases operational complexity and costs.
-- **Option 3 - Hybrid Approach:** A hybrid model combines aspects of both, such as grouping smaller tenants into a shared database while providing high-value tenants with dedicated databases.
+- **Option 1 - Patch the Existing Platform:** Invest in short-term fixes to mitigate the most urgent security vulnerabilities and modernize UI elements within the constraints of the current technology. This is cost-effective in the short term but unsustainable, as Java applets are no longer supported by major browsers and continue to create security risks.
 
-Could the team have anticipated the need for enterprise-level features during the early stages of development? Would implementing a more flexible, hybrid architecture from the outset have been seen as forward-thinking or over-engineering? Did business leaders understand the importance to invest in scaling infrastructure, or lead the team to reactive changes instead of proactive planning? 
+- **Option 2 - Incremental Replacement:** Begin a gradual transition to a modern framework, replacing portions of the applet-based system with newer components over time. This balances cost and effort but risks inconsistencies in user experience and prolonged operational challenges during the transition.
+
+- **Option 3 - Full Rewrite:** Commit to rebuilding the platform entirely using modern technologies. While this option requires significant upfront investment, it offers long-term scalability, improved security, and a modern user experience that aligns with client expectations.
+
+Could the original team have foreseen the limitations of Java applets as browser support began to decline? Were market trends not be followed closely enough to detect this risk in time? Would earlier investments in more adaptable technologies have mitigated the need for a costly full rewrite? Did business leaders underestimate the pace of technology evolution and its implications for long-term usability and security? 
 
 ### Workflow Change and Database Access Patterns
 
 Changes in business workflows can introduce significant risk into the design of underlying technologies, often requiring reevaluation of earlier decisions. A common example involves databases, where changes in access patterns can drastically impact performance and cost.
 
-Consider, a logistics company initially using DynamoDB, an extremely fast yet rigid database, for quick point lookups, such as retrieving the status of individual shipments. Over time, the company introduced analytics features allowing customers to view trends across all shipments. This required broader queries that scanned the entire database, causing costs to skyrocket and performance to degrade. The team faced a decision: stick with DynamoDB and optimize queries, migrate to a relational database like PostgreSQL, or use both databases for their respective strengths.
+Consider a logistics company initially using DynamoDB, an extremely fast yet rigid database, for quick point lookups, such as retrieving the status of individual shipments. Over time, the company introduced analytics features allowing customers to view trends across all shipments. This required broader queries that scanned the entire database, causing costs to skyrocket and performance to degrade. The team faced a decision: stick with DynamoDB and optimize queries, migrate to a relational database like PostgreSQL, or use both databases for their respective strengths.
 
 - **Option 1 - Shared Database Model:** A single database for all tenants segregates data using tenant identifiers. This is cost-effective and easier to implement initially but increases risks around data isolation and scalability as the tenant base grows.
 - **Option 2 - Database-Per-Tenant Model:** Each tenant has its own database, offering strong isolation and tailored performance but introducing significant operational complexity and higher costs.
@@ -143,50 +185,19 @@ Consider, a logistics company initially using DynamoDB, an extremely fast yet ri
 
 Could the team have anticipated this shift in workflow when initially selecting the database? Was the focus on immediate cost-efficiency short-sighted, or was it the right choice based on the information available at the time? Did business stakeholders clearly communicate the potential for evolving analytics needs, or did the technology team miss early indicators of future requirements? 
 
-## Horizon Thinking
+## Foundational Impacts
 
-In technology solutions, the tension between short-term and long-term thinking plays out daily. Most projects begin with the push to achieve a Minimum Viable Product (MVP)—the fastest way to get to market, win customers, and learn what the market has to say about the offering. While this approach is essential for agility, it often exposes a critical communication gap between stakeholders and implementation teams.
+Risk acts as clear a headwind for other F6 Foundations, as uncertainty complicates planning, execution, and maintenance. Here’s how it interacts:
 
-This gap leads to three common scenarios, each with unique challenges and lessons. 
+| **Foundation**                                                   | **Impact of Risk**                                                                                     |
+|----------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| Capability | High risk can make it harder to achieve feature-rich, reliable solutions, as requirements may shift during development. |
+| Dependency | Frequent change strains the entire underlying eco-system, increasing risk across the board. |
+| Security | Risk often introduces new attack surfaces or vulnerabilities, requiring constant vigilance. |
+| Resilience | Unanticipated changes can undermine a system's design and stability, increasing the likelihood of failure or downtime. |
+| Investment | Higher uncertainty often means higher costs, as adapting to change requires more resources. |
 
-{{% callout note %}}
-Each of these scenarios underscores the importance of clear, ongoing communication and collaboration between stakeholders and implementation teams. The key takeway—whether you pay the cost upfront or later, **the goal is to avoid surprises**. Success comes from aligning on a shared vision, understanding trade-offs, and making intentional decisions together.
-{{% /callout %}}
-
-### Unexpected Refactoring
-
-A stakeholder requests a small MVP with the understanding that it can grow incrementally over time. They envision each new feature adding small impacts, seamlessly building on the initial product. But then, out of nowhere—the technical team announces that the architecture can no longer handle the additional features. Everything needs to be refactored, causing delays and skyrocketing costs.
-
-<h4>Why It Happens:</h4>
-
-Systems are built with assumptions in mind. If those assumptions—often based on incomplete or omitted information—prove incorrect, the entire architecture may need to change. Sometimes stakeholders omit critical details to save time or reduce costs, believing these details won’t matter yet. Other times, they simply don’t realize the relevance of those details.
-
-<h4>How to Avoid It:</h4>
-
-Stakeholders must communicate clearly and proactively about what they believe to be true and stable until specific milestones, such as the next six months, onboarding a major customer, or securing funding. They must also critically assess what features or capabilities they will—and will not—get within those milestones to avoid surprises down the road.
-
-### Overengineered Solutions
-
-A stakeholder provides vague or minimal details, perhaps due to time constraints, a lack of experience with technology solutions, or insufficient involvement and curiosity. Eager to anticipate future needs, the implementation team creates an elaborate, overly complex solution for a problem that doesn’t yet exist—or may never exist. Time and money are wasted, and the stakeholder grows frustrated as deadlines slip and no tangible product emerges.
-
-<h4>Why It Happens:</h4>
-
-Without clear direction, implementation teams may overcompensate by planning for hypothetical scenarios. While well-intentioned, these efforts often solve problems that are far in the future or unlikely to occur, diverting resources from immediate priorities.
-
-<h4>How to Avoid It:</h4>
-
-Stakeholders must communicate a clear vision of what is needed at each milestone, while also offering insights into long-term business goals. Collaboration is key: when technical teams explain the foundational groundwork required for future features, stakeholders must weigh the cost of doing it now versus incurring larger costs through future refactoring. Experienced stakeholders understand that delaying groundwork to validate the product is often a strategic choice, while inexperienced ones may be caught off guard when future costs arise.
-
-### Balanced Collaboration
-
-In the ideal case, stakeholders and implementation teams achieve alignment through shared curiosity, collaboration, and mutual understanding. The stakeholder is actively involved, learning enough about the technology to make informed decisions. The implementation team is equally engaged, learning enough about the business to understand its drivers and priorities. Together, they strike a balance between delivering an MVP and laying the groundwork for future needs.
-
-<h4>Why It Works:</h4>
-
-This approach is grounded in trust and transparency. Stakeholders and implementation teams recognize the shared goal of delivering a valuable product while managing risk and cost. By staying engaged and maintaining open communication, they avoid the pitfalls of both underplanning and overengineering.
-
-- **Stakeholders** should remain curious and involved, asking questions to understand technical decisions and how they align with business goals.
-- **Implementation teams** should prioritize understanding the “why” behind business drivers, ensuring their solutions align with the broader vision.
+Tailwinds? Risk rarely makes other foundations easier to address. The closest "benefit" is that embracing risk forces teams to prioritize adaptability, which can create solutions better suited to long-term evolution.
 
 ## Why This Matters
 
