@@ -24,7 +24,7 @@ sections:
         - name: Security
           icon: shield-check
           description: Have a plan to protect assets.
-        - name: Risks
+        - name: Risk
           icon: bolt
           description: Anticipate and prepare for challenges.
         - name: Optimizations

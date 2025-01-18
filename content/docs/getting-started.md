@@ -19,13 +19,13 @@ F6 does not replace methodologies like Agile, Scrum, or Lean. Instead, it layers
 | **Features** | Defines functional requirements.              | "What should the solution do?" A feature-rich e-commerce platform requires well-defined workflows and functionality. |
 | **Dependencies** | Evaluates external reliance.              | "What do we build, buy, or integrate?" Choosing a third-party payment gateway can reduce development effort but introduce long-term risks. |
 | **Security**   | Safeguards data and systems.                | "How do we protect assets?" Compliance with regulations like GDPR or SOC 2 is crucial for systems handling sensitive user data. |
-| **Risks** | Accounts for uncertainty over time.                 | "What risks might we face, and how do we manage them?" In a startup, rapidly changing market demands may necessitate flexible architecture. |
+| **Risk** | Accounts for uncertainty over time.                 | "What risks might we face, and how do we manage them?" In a startup, rapidly changing market demands may necessitate flexible architecture. |
 | **Optimizations** | Focuses on efficiency and performance.   | "How can we maximize output and minimize waste?" Implementing automation strategies to reduce downtime and improve quality. |
 | **Investments** | Allocates resources.                       | "What’s the time and cost?" Balancing budget constraints with project goals.                     |
 
 Decisions in one foundation often affect others, for example:
 
-- A solution with many **Features** (functions and workflows) and many **Risks** (frequent changes) faces highly uncertain future demands. Without sufficient **Investment** to accommodate these changes, the solution risks diminished quality of capabilities and compromised **Security** effectiveness over its lifespan.
+- A solution with many **Features** (functions and workflows) and many **Risk** (frequent changes) faces highly uncertain future demands. Without sufficient **Investment** to accommodate these changes, the solution risks diminished quality of capabilities and compromised **Security** effectiveness over its lifespan.
 - A solution heavily reliant on external **Dependencies** (tools and products) may offer faster speed to market but can become vulnerable if those integrations fail. Without adequate **Investment** in **Optimizations**, this could lead to decreased uptime and a decline in quality of service.
 
 The F6 Framework’s strength lies in illuminating these interconnections, enabling informed, intentional decision-making.
@@ -39,7 +39,7 @@ It is a structured approach for uncovering critical details about each of the si
 - **Features**: "What are the must-have functions and workflows?"
 - **Dependencies**: "What should we own vs. rely on?"
 - **Security**: "What compliance requirements apply?"
-- **Risks**: "What assumptions might change?"
+- **Risk**: "What assumptions might change?"
 - **Optimizations**: "What do we focus perfecting?"
 - **Investment**: "What’s the timeline and budget?"
 
@@ -54,12 +54,12 @@ Each foundation has a unique gradient of complexity—some are more intuitive, w
     - **Dependencies:** High-level decisions like "build vs. buy" are easy to comprehend, but understanding the impact of integrating low-level software components and third-party tools requires technical expertise. Managing versioning, support lifecycles, and external updates adds depth.
     - **Security:** Compliance frameworks (e.g., GDPR, SOC 2) are broadly understood, but granular aspects such as roles, permissions, and encryption mechanisms demand specialized knowledge.
 - **Challenging Foundations:**
-    - **Risks:** Predicting change is inherently difficult. High-level trends (e.g., market shifts) are often discussed, but anticipating how those changes cascade into technical decisions—from feature adaptability to data migration strategies—requires both foresight and agility.
+    - **Risk:** Predicting change is inherently difficult. High-level trends (e.g., market shifts) are often discussed, but anticipating how those changes cascade into technical decisions—from feature adaptability to data migration strategies—requires both foresight and agility.
     - **Optimizations:** Stakeholders often focus end-user features and "happy day" scenarios. While high-level ideas like automation, redundancy and backups are easy to explain, orchestrating automation workflows and  crafting fault-tolerant systems involves complex low-level trade-offs in architecture, monitoring, and recovery strategies.
 
-Straightforward foundations like **Features** and **Investment** provide immediate clarity and are natural starting points for discussion. However, abstract foundations like **Risks** and **Optimizations** carry the most long-term impact. For example:
+Straightforward foundations like **Features** and **Investment** provide immediate clarity and are natural starting points for discussion. However, abstract foundations like **Risk** and **Optimizations** carry the most long-term impact. For example:
 
-- Ignoring **Risks** may result in rigid solutions that are costly to adapt as requirements shift.
+- Ignoring **Risk** may result in rigid solutions that are costly to adapt as requirements shift.
 - Underestimating **Optimizations** can lead to catastrophic failures in production environments—impacting businesses when they least expect it.
 
 ## Trade-offs
@@ -76,7 +76,7 @@ Understanding the F6 Framework begins with recognizing the levers available to i
 
 Stakeholders gain a clearer understanding of the trade-offs inherent in their decisions, while implementation teams can turn these insights into actionable strategies. For instance, when evaluating system architecture, implementation teams might explain trade-offs like this:
 
-- "To enable rapid **Feature** updates, we’ll need to prioritize a modular architecture to reduce refactoring **Risks**, which increases both up-front **Investment** and ongoing maintenance costs."
+- "To enable rapid **Feature** updates, we’ll need to prioritize a modular architecture to reduce refactoring **Risk**, which increases both up-front **Investment** and ongoing maintenance costs."
 
 By framing decisions in terms of their impact on the foundational priorities, teams can have productive conversations that align technical strategies with stakeholder expectations. 
 
@@ -86,7 +86,7 @@ Next, explore the in-depth material on each of the six foundations. Once familia
   {{< card url="/docs/foundations/features/" title="Features" icon="puzzle-piece" >}}
   {{< card url="/docs/foundations/dependencies/" title="Dependencies" icon="link" >}}
   {{< card url="/docs/foundations/security/" title="Security" icon="shield-check" >}}
-  {{< card url="/docs/foundations/risks/" title="Risks" icon="bolt" >}}  
+  {{< card url="/docs/foundations/risk/" title="Risk" icon="bolt" >}}  
   {{< card url="/docs/foundations/optimizations/" title="Optimizations" icon="server" >}}
   {{< card url="/docs/foundations/investments/" title="Investments" icon="chart-pie" >}}
 {{< /cards >}}
