@@ -44,13 +44,13 @@ To anticipate potential for change requires curiosity and active participation. 
 
 Every business faces unique challenges, yet certain themes tend to emerge consistently. It helps to frame these conversations around a few key categories: 
 
-| **Category**         | **Risk**                                                                                              | **Example**                                                                                       |
+| **Risk**         | **Description**                                                                                              | **Example**                                                                                       |
 |----------------------|------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
-| **Strategic Risks**   | **Is our vision clear and understood?** Misalignment between the business strategy and technical solutions, leading to inefficiencies or missed opportunities. | A SaaS company focuses solely on enterprise clients, overlooking demand from small businesses, missing a key growth opportunity. |
-| **Market Dynamics**   | **Are we aligned with market expectations?** Shifting competitive landscapes, changing customer expectations, or feedback that requires adaptation. | An e-commerce platform is slow to adopt same-day delivery, losing customers to more agile competitors. |
-| **Regulatory Risks**  | **Are we tracking industry compliance trends?** Compliance with new laws, regulations, or standards that require redesigns or updates.              | A healthcare app must meet new patient privacy laws, adding encryption and audit trails to avoid fines or legal exposure. |
-| **Operational Risks** | **Can we execute and deliver on our ideas?** Business growth or inefficiencies in day-to-day processes, lack of automation, or poor alignment between teams.         | A manual deployment process causes downtime during peak business periods, reducing customer trust and revenue. |
-| **Technical Risks**   | **Do we have the know-how, expertise and means to do so?** Dependence on tools, APIs, or systems that may not scale, and architectural decisions or delays in adopting emerging technologies and frameworks, can hinder adaptability, competitiveness, and team productivity.                  | A company struggles to integrate a cutting-edge framework, delaying a critical product launch. |
+| **Strategic**   | **Is our vision clear and understood?** Misalignment between the business strategy and technical solutions, leading to inefficiencies or missed opportunities. | A SaaS company focuses solely on enterprise clients, overlooking demand from small businesses, missing a key growth opportunity. |
+| **Market**      | **Are we aligned with market expectations?** Shifting competitive landscapes, changing customer expectations, or feedback that requires adaptation. | An e-commerce platform is slow to adopt same-day delivery, losing customers to more agile competitors. |
+| **Regulatory**  | **Are we tracking industry compliance trends?** Compliance with new laws, regulations, or standards that require redesigns or updates.              | A healthcare app must meet new patient privacy laws, adding encryption and audit trails to avoid fines or legal exposure. |
+| **Operational** | **Can we execute and deliver on our ideas?** Business growth or inefficiencies in day-to-day processes, lack of automation, or poor alignment between teams.         | A manual deployment process causes downtime during peak business periods, reducing customer trust and revenue. |
+| **Technical**   | **Do we have the know-how, expertise and means to do so?** Dependence on tools, APIs, or systems that may not scale, and architectural decisions or delays in adopting emerging technologies and frameworks, can hinder adaptability, competitiveness, and team productivity.                  | A company struggles to integrate a cutting-edge framework, delaying a critical product launch. |
 
 Encouraging everyone to think about "what if" scenarios along these categories helps surface areas of risk that might not otherwise be apparent. Here are some additional example questions that can guide this process:
 
@@ -70,34 +70,28 @@ The key to success lies in embracing the shared responsibility between business 
 
 To effectively communicate risk it helps to frame it in terms that resonate with the business.
 
-**Strategic Alignment of Risk:** Highlight how risks align or conflict with the business’s strategic objectives. This includes evaluating whether current decisions support long-term growth, competitive positioning, or market differentiation.
-- _“Delaying entry into the B2C market reduces immediate costs but risks losing market share to competitors already targeting that segment.”_
+| **Risk**                     | **Strategy**                                                                                             | **Example**                                                                                       |
+|----------------------------------|---------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
+| **Strategic**    | Highlight how risks align or conflict with long-term growth, competitive positioning, or market goals.   | Delaying entry into the B2C market reduces immediate costs but risks losing market share to competitors already targeting that segment. |
+| **Market**       | Articulate risks tied to customer expectations, trends, and competitor innovations.                      | Delaying a redesign of the outdated user interface risks losing X% of users annually to competitors with more modern designs. |
+| **Regulatory**   | Frame regulatory risks in terms of compliance costs, legal exposure, and reputational harm.              | Adapting data handling practices to meet new privacy regulations will cost $Y upfront but avoids potential fines of $Z. |
+| **Operational**  | Explain how risks affect processes, resource allocation, and system reliability.                         | Continuing manual deployments saves time now but increases the risk of downtime during peak periods, potentially costing $X per incident. |
+| **Technical**    | Communicate risks of rigid systems, scalability limitations, or immature technologies.             | Using this database solution works for our current scale, but if demand doubles, it may require costly reengineering. |
 
-**Market Sensitivity to Risk:** Articulate risks tied to customer expectations, market trends, and competitive pressures. Emphasize the cost of missed opportunities or negative customer experiences.
-- _“Delaying a redesign of the outdated user interface risks losing X% of users annually to competitors with more modern designs.”_
-
-**Regulatory and Compliance Risk:** Frame regulatory risks in terms of compliance costs, legal exposure, and reputational harm. Show how proactive management reduces potential penalties and ensures business continuity.
-- _“Adapting our data handling practices to meet new privacy regulations will cost $Y upfront but avoids potential fines of $Z.”_
-
-**Operational Impact of Risk:** Explain how risks affect day-to-day processes, including team workflows, resource allocation, and system reliability. Operational risks often have compounding effects if not addressed early.
-- _“Continuing manual deployments saves time now, but it increases the risk of downtime during peak periods, potentially costing $X per incident.”_
-
-**Technical Flexibility and Scalability Risks:** Communicate the risks of technical decisions, such as choosing rigid systems, underestimating scalability needs, or adopting immature technologies.
-- _“Using this database solution works for our current scale, but if demand doubles, it may require costly reengineering.”_
 
 ## Adapting to Change
 
 The ability to adapt is essential in managing risks. Successfully navigating these challenges requires both **proactive risk management**—anticipating potential issues and planning for them—and **reactive adaptation**, addressing unforeseen disruptions effectively when they arise.
 
-Once again the key to success is collaboration between stakeholders and implementation teams, ensuring that decisions align with both business priorities and technical realities. The following table outlines strategies for mitigating and adapting to risks across key categories, paired with real-world examples:
+Once again the key to success is collaboration between stakeholders and implementation teams, ensuring that decisions align with both business priorities and technical realities. The table below illustrates how proactive and reactive approaches differ across key risk categories.
 
-| **Category**           | **Mitigation Strategies**                                                                                      | **Example**                                                                                     |
-|------------------------|--------------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------|
-| **Strategic Risks**     | Align technical decisions with long-term business goals.<br><br>Regularly review strategic priorities to ensure technical solutions evolve with business needs.                                                   | A SaaS company avoids focusing solely on enterprise clients by exploring demand from small businesses, preventing missed opportunities. |
-| **Market Dynamics**     | Stay attuned to customer feedback and competitor innovations through regular market analysis.<br><br>Build modular solutions to enable rapid feature development in response to market shifts.               | An e-commerce platform adopts same-day delivery to stay competitive with market leaders.      |
-| **Regulatory Risks**    | Monitor industry regulations proactively and engage with legal advisors to anticipate compliance needs.<br><br>Design systems with flexibility to adapt to future regulatory changes.    | A healthcare app adds encryption and audit trails to meet new patient privacy laws.           |
-| **Operational Risks**   | Automate repetitive processes to reduce errors and increase efficiency.<br><br>Conduct regular training to ensure teams can adapt to changes in workflows or technology.                                    | A logistics company implements CI/CD pipelines to eliminate downtime during deployments.      |
-| **Technical Risks**     | Adopt evoluationary designs and resilient architecture, to isolate failures and improve scalability.<br><br>Regularly evaluate dependencies for security, support, and future compatibility.         | A company mitigates the risk of a deprecated API by designing a modular integration layer.    |
+| **Category**           | **Proactive Example**                                                                                      | **Reactive Example**                                                                                 |
+|------------------------|-----------------------------------------------------------------------------------------------------------|-----------------------------------------------------------------------------------------------------|
+| **Strategic**     | Regularly align business goals and technical decisions, ensuring the roadmap anticipates market shifts.   | Rebuilding key features after realizing the product is misaligned with an emerging customer segment. |
+| **Market**        | Continuously monitor customer feedback and competitor trends to adjust the product roadmap early.         | Rushing to implement new features after losing market share to a competitor’s innovation.           |
+| **Regulatory**    | Proactively design systems with modular compliance features that can adapt to future regulations.         | Overhauling the system after a regulatory change imposes penalties for non-compliance.              |
+| **Operational**   | Establish cross-training programs and clear documentation to minimize disruptions when team members leave. | Scrambling to reassign tasks and onboard new hires after losing a key employee with critical knowledge.  |
+| **Technical**     | Use resilient architectures, like microservices, to isolate failures and enable scalability.              | Refactoring the system after it crashes under unexpected load due to monolithic design limitations.  |
 
 ## Horizon Thinking
 
@@ -141,7 +135,7 @@ In the ideal case, stakeholders and implementation teams achieve alignment throu
 
 ## Examples
 
-Success requires balancing short-term goals with long-term sustainability, particularly when managing change. Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few more real world examples of risk and possible trade-offs.
+Decisions made today can influence flexibility, maintainability, and operational efficiency for years to come. Here are a few more real world examples of risk and possible trade-offs.
 
 ### Market Shift from B2B to B2C
 
